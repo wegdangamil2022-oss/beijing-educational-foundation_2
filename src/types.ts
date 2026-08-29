@@ -1,8 +1,20 @@
 export type Language = 'ar' | 'en';
 
-export type CategoryType = 'all' | 'scholarships' | 'universities' | 'countries' | 'majors' | 'courses' | 'articles' | 'services' | 'exams' | 'jobs' | 'tools';
+export type CategoryType =
+  | 'all'
+  | 'scholarships'
+  | 'universities'
+  | 'countries'
+  | 'majors'
+  | 'courses'
+  | 'articles'
+  | 'services'
+  | 'exams'
+  | 'jobs'
+  | 'tools';
 
-export type DegreeLevel = 'بكالوريوس' | 'ماجستير' | 'دكتوراه' | 'دورات تدريبية' | 'زمالة أبحاث' | 'all';
+export type DegreeLevel =
+  'بكالوريوس' | 'ماجستير' | 'دكتوراه' | 'دورات تدريبية' | 'زمالة أبحاث' | 'all';
 
 export type FundingType = 'ممولة بالكامل' | 'ممولة جزئياً' | 'إعفاء من الرسوم' | 'راتب شهري وسكن';
 
@@ -51,7 +63,6 @@ export interface CountryDestination {
   visaEase: string;
 }
 
-
 export interface UniversityRanking {
   name: string;
   year: number;
@@ -73,6 +84,62 @@ export interface UniversityTuitionFees {
   postgradTuition?: string;
   postgradNote?: string;
   officialTuitionUrl?: string; // رابط الرسوم الرسمي
+}
+
+export interface UniversityScholarship {
+  id: string;
+  name: string;
+  nameEn?: string;
+  type?: string;
+  audience?: string;
+  officialUrl: string;
+}
+
+export interface UniversityLanguageRequirements {
+  required: boolean;
+  languages: string[];
+  acceptedTests: string[];
+  officialUrl: string;
+}
+
+export interface UniversityDocumentRequirements {
+  generalDocuments: string[];
+  graduateAdditionalDocuments: string[];
+  officialUrl: string;
+}
+
+export interface UniversityHousing {
+  available: boolean;
+  internationalStudentsEligible: boolean;
+  typicalCost: string;
+  currency: string;
+  officialUrl?: string;
+}
+
+export interface UniversityLivingCosts {
+  monthlyEstimate: string;
+  currency: string;
+  variationNote: string;
+  officialUrl?: string;
+}
+
+export interface UniversityOfficialLink {
+  label: string;
+  url: string;
+}
+
+export interface UniversityOfficialContacts {
+  phone?: string;
+  officialWebsite: string;
+  mainSocial?: UniversityOfficialLink;
+  governmentRegister?: UniversityOfficialLink;
+  usefulLinks?: UniversityOfficialLink[];
+}
+
+export interface UniversityDataTrust {
+  lastVerified: string;
+  sourceLabel: string;
+  sourceUrl: string;
 }
 
 export interface UniversityStudyPrograms {
@@ -113,6 +180,13 @@ export interface University {
   websiteUrl: string;
   rankings?: UniversityRanking[];
   tuitionFees?: UniversityTuitionFees;
+  scholarships?: UniversityScholarship[];
+  languageRequirements?: UniversityLanguageRequirements;
+  documentRequirements?: UniversityDocumentRequirements;
+  housing?: UniversityHousing;
+  livingCosts?: UniversityLivingCosts;
+  officialContacts?: UniversityOfficialContacts;
+  dataTrust?: UniversityDataTrust;
   studyPrograms?: UniversityStudyPrograms;
   internationalAdmissions?: UniversityInternationalAdmissions;
 }
@@ -150,7 +224,7 @@ export interface Major {
   futureDemand: 'مرتفع جداً' | 'مرتفع' | 'متوسط';
   topCountries: string[];
   popularCareers: string[];
-  
+
   // Detailed Information
   associatedMajor?: string;
   academicField?: string;
@@ -217,7 +291,13 @@ export interface ApplicationMilestone {
   scholarshipTitle: string;
   country: string;
   deadline: string;
-  stage: 'تجهيز المستندات' | 'كتابة خطاب الدافع' | 'خطابات التوصية' | 'تم إرسال الطلب' | 'المقابلة الشخصية' | 'تم القبول بنجاح';
+  stage:
+    | 'تجهيز المستندات'
+    | 'كتابة خطاب الدافع'
+    | 'خطابات التوصية'
+    | 'تم إرسال الطلب'
+    | 'المقابلة الشخصية'
+    | 'تم القبول بنجاح';
   progress: number; // 0 to 100
   notes: string;
   checklist: {

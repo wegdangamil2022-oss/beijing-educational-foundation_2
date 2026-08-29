@@ -13,7 +13,7 @@ export const UniversitiesList: React.FC<UniversitiesListProps> = ({ universities
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-sm font-black text-stone-900 flex items-center gap-1.5">
-            <Building2 className="w-4 h-4 text-[#003B68]" />
+            <Building2 className="w-4 h-4 text-[var(--mn-heading)]" />
             <span>أفضل الجامعات العالمية والشريكة</span>
           </h2>
           <p className="text-[11px] text-stone-500">
@@ -26,7 +26,7 @@ export const UniversitiesList: React.FC<UniversitiesListProps> = ({ universities
         {universities.map((uni) => (
           <div
             key={uni.id}
-            className="bg-white rounded-2xl border border-stone-200 shadow-xs hover:shadow-md transition-all overflow-hidden p-3.5 space-y-2.5 text-right hover:border-amber-400"
+            className="bg-[var(--mn-surface)] rounded-2xl border border-stone-200 shadow-xs hover:shadow-md transition-all overflow-hidden p-3.5 space-y-2.5 text-right hover:border-amber-400"
           >
             <div className="flex items-start justify-between gap-3">
               <div className="flex items-center gap-3">
@@ -37,7 +37,12 @@ export const UniversitiesList: React.FC<UniversitiesListProps> = ({ universities
                 />
                 <div>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-xs font-black text-stone-900">{uni.name} <span className="text-stone-500 font-semibold mr-0.5">({uni.nameEn.replace('University of ', '').replace(' University', '')})</span></span>
+                    <span className="text-xs font-black text-stone-900">
+                      {uni.name}{' '}
+                      <span className="text-stone-500 font-semibold mr-0.5">
+                        ({uni.nameEn.replace('University of ', '').replace(' University', '')})
+                      </span>
+                    </span>
                     <span className="text-xs">{uni.countryFlag}</span>
                   </div>
                 </div>
@@ -50,9 +55,7 @@ export const UniversitiesList: React.FC<UniversitiesListProps> = ({ universities
               </div>
             </div>
 
-            <p className="text-[11px] text-stone-600 leading-relaxed">
-              {uni.description}
-            </p>
+            <p className="text-[11px] text-stone-600 leading-relaxed">{uni.description}</p>
 
             <div className="flex flex-wrap gap-1 pt-1">
               {uni.topMajors.map((m, idx) => (

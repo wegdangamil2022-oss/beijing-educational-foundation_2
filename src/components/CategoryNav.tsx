@@ -6,17 +6,22 @@ interface CategoryNavProps {
   onSelectCategory: (cat: CategoryType) => void;
 }
 
-export const CategoryNav: React.FC<CategoryNavProps> = ({
-  selectedCategory,
-  onSelectCategory,
-}) => {
+export const CategoryNav: React.FC<CategoryNavProps> = ({ selectedCategory, onSelectCategory }) => {
   const categories = [
     {
       id: 'scholarships' as CategoryType,
       label: 'المنح',
       sublabel: 'والفرص',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
           <path d="M6 12v5c3 3 9 3 12 0v-5" />
         </svg>
@@ -27,7 +32,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الجامعات',
       sublabel: 'العالمية',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M3 21h18" />
           <path d="M5 21V9" />
           <path d="M19 21V9" />
@@ -43,7 +56,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الدول',
       sublabel: 'والوجهات',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <circle cx="12" cy="12" r="10" />
           <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
           <path d="M2 12h20" />
@@ -55,7 +76,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'التخصصات',
       sublabel: 'المطلوبة',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
           <path d="M6 6h10" />
           <path d="M6 10h10" />
@@ -68,7 +97,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الدورات',
       sublabel: 'التأهيلية',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <circle cx="12" cy="12" r="10" />
           <circle cx="8" cy="12" r="1" fill="currentColor" />
           <circle cx="12" cy="12" r="1" fill="currentColor" />
@@ -81,7 +118,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'المقالات',
       sublabel: 'والمعرفة',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
           <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
         </svg>
@@ -92,7 +137,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الخدمات',
       sublabel: 'المتخصصة',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
         </svg>
@@ -103,7 +156,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الاختبارات',
       sublabel: 'الدولية',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
           <polyline points="14 2 14 8 20 8" />
           <line x1="16" x2="8" y1="13" y2="13" />
@@ -117,7 +178,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الوظائف',
       sublabel: 'والتدريب',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
         </svg>
@@ -128,7 +197,15 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
       label: 'الأدوات',
       sublabel: 'الذكية',
       icon: (
-        <svg className="w-5 h-5 text-[#E4B343]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          className="w-5 h-5 text-[var(--mn-accent-text)]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M12 2v20" />
           <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
         </svg>
@@ -146,7 +223,7 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
         {selectedCategory !== 'all' && (
           <button
             onClick={() => onSelectCategory('all')}
-            className="text-[11px] text-[#003B68] font-bold hover:underline cursor-pointer"
+            className="text-[11px] text-[var(--mn-heading)] font-bold hover:underline cursor-pointer"
           >
             عرض الكل
           </button>
@@ -164,16 +241,16 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
               onClick={() => onSelectCategory(isActive ? 'all' : cat.id)}
               className={`flex flex-col items-center justify-center p-2 rounded-2xl transition-all active:scale-95 group cursor-pointer ${
                 isActive
-                  ? 'bg-[#003B68] text-[#E4B343] shadow-sm ring-2 ring-[#E4B343]'
-                  : 'bg-white hover:bg-slate-50 border border-slate-200 shadow-2xs hover:border-[#E4B343]/50'
+                  ? 'bg-[var(--mn-primary)] text-[var(--mn-accent-text)] shadow-sm ring-2 ring-[var(--mn-focus)]'
+                  : 'bg-[var(--mn-surface)] hover:bg-slate-50 border border-slate-200 shadow-2xs hover:border-[var(--mn-accent)]/50'
               }`}
             >
               {/* Circular Icon Container */}
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center mb-1.5 transition-transform group-hover:scale-110 ${
                   isActive
-                    ? 'bg-[#002E52] border border-[#E4B343]'
-                    : 'bg-slate-50 border border-slate-100 group-hover:bg-[#E4B343]/10'
+                    ? 'bg-[#002E52] border border-[var(--mn-accent)]'
+                    : 'bg-slate-50 border border-slate-100 group-hover:bg-[var(--mn-accent)]/10'
                 }`}
               >
                 {cat.icon}
@@ -182,7 +259,7 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
               {/* Label */}
               <span
                 className={`text-[11px] font-bold leading-tight ${
-                  isActive ? 'text-[#E4B343] font-black' : 'text-slate-700'
+                  isActive ? 'text-[var(--mn-accent-text)] font-black' : 'text-slate-700'
                 }`}
               >
                 {cat.label}
@@ -194,4 +271,3 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
     </section>
   );
 };
-

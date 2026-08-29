@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import { 
-  Sparkles, 
-  FileText, 
-  Award, 
-  Bot, 
-  Send, 
-  Copy, 
-  Check, 
-  RefreshCw, 
-  ArrowLeft, 
-  GraduationCap, 
-  Search, 
+import {
+  Sparkles,
+  FileText,
+  Award,
+  Bot,
+  Send,
+  Copy,
+  Check,
+  RefreshCw,
+  ArrowLeft,
+  GraduationCap,
+  Search,
   Layers,
   BookOpen,
   CheckCircle2,
-  X
+  X,
 } from 'lucide-react';
 import { Scholarship } from '../types';
 
@@ -35,23 +35,21 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
   onSelectScholarship,
   presetScholarshipTitle = '',
 }) => {
-  const [activeTab, setActiveTab] = useState<'letter' | 'cv' | 'chat' | 'search'>(
-    initialTab
-  );
+  const [activeTab, setActiveTab] = useState<'letter' | 'cv' | 'chat' | 'search'>(initialTab);
 
   // Motivation Letter States
   const [studentName, setStudentName] = useState('أحمد');
   const [scholarshipName, setScholarshipName] = useState(
-    presetScholarshipTitle || 'منحة إيراسموس + (Erasmus+)'
+    presetScholarshipTitle || 'منحة إيراسموس + (Erasmus+)',
   );
   const [targetUniversity, setTargetUniversity] = useState('اتحاد الجامعات الأوروبية');
   const [major, setMajor] = useState('علوم الحاسوب والذكاء الاصطناعي');
   const [degreeLevel, setDegreeLevel] = useState('ماجستير');
   const [background, setBackground] = useState(
-    'خريج بكالوريوس هندسة برمجيات بمعدل ممتاز مع مشروع تخرج رائد في الذكاء الاصطناعي وخبرة تدريب عملي'
+    'خريج بكالوريوس هندسة برمجيات بمعدل ممتاز مع مشروع تخرج رائد في الذكاء الاصطناعي وخبرة تدريب عملي',
   );
   const [futureGoals, setFutureGoals] = useState(
-    'تطوير خوارزميات تعلم آلي تخدم القطاع الطبي ونقل الخبرات التكنولوجية المتطورة للوطن العربي'
+    'تطوير خوارزميات تعلم آلي تخدم القطاع الطبي ونقل الخبرات التكنولوجية المتطورة للوطن العربي',
   );
   const [letterLanguage, setLetterLanguage] = useState<'ar' | 'en'>('ar');
   const [generatedLetter, setGeneratedLetter] = useState('');
@@ -65,7 +63,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
   const [cvDegree, setCvDegree] = useState('ماجستير');
   const [cvMajor, setCvMajor] = useState('هندسة الذكاء الاصطناعي');
   const [cvCountry, setCvCountry] = useState('أوروبا / ألمانيا');
-  const [activities, setActivities] = useState('أبحاث منشورة، نشاط تطوعي أكاديمي، رئاسة نادي البرمجة الطلابي');
+  const [activities, setActivities] = useState(
+    'أبحاث منشورة، نشاط تطوعي أكاديمي، رئاسة نادي البرمجة الطلابي',
+  );
   const [cvResult, setCvResult] = useState<any>(null);
   const [isEvaluatingCv, setIsEvaluatingCv] = useState(false);
 
@@ -73,7 +73,8 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
   const [messages, setMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([
     {
       role: 'assistant',
-      content: 'أهلاً بك! أنا مستشارك الأكاديمي الذكي في منصة منارتك. كيف يمكنني مساعدتك اليوم بخصوص المنح الدولية أو كتابة ملف التقديم أو اختيار التخصص؟',
+      content:
+        'أهلاً بك! أنا مستشارك الأكاديمي الذكي في منصة منارتك. كيف يمكنني مساعدتك اليوم بخصوص المنح الدولية أو كتابة ملف التقديم أو اختيار التخصص؟',
     },
   ]);
   const [chatInput, setChatInput] = useState('');
@@ -199,19 +200,18 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
   return (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-xs z-50 flex items-center justify-center p-2 overflow-y-auto">
-      <div className="bg-white rounded-3xl max-w-[420px] w-full shadow-2xl border border-amber-200 overflow-hidden flex flex-col max-h-[92vh] animate-in fade-in zoom-in-95 duration-200">
-        
-        {/* Header with #003B68 & #E4B343 */}
-        <div className="bg-[#003B68] p-4 text-white flex items-center justify-between border-b border-[#E4B343]/30">
+      <div className="bg-[var(--mn-surface)] rounded-3xl max-w-[420px] w-full shadow-2xl border border-amber-200 overflow-hidden flex flex-col max-h-[92vh] animate-in fade-in zoom-in-95 duration-200">
+        {/* Header with var(--mn-primary) & var(--mn-accent-soft) */}
+        <div className="bg-[var(--mn-primary)] p-4 text-white flex items-center justify-between border-b border-[var(--mn-accent)]/30">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-[#002E52] border border-[#E4B343] flex items-center justify-center text-[#E4B343]">
+            <div className="w-8 h-8 rounded-full bg-[#002E52] border border-[var(--mn-accent)] flex items-center justify-center text-[var(--mn-accent-text)]">
               <Sparkles className="w-4 h-4" />
             </div>
             <div>
               <h3 className="text-sm font-black text-white flex items-center gap-1.5">
                 <span>أدوات الذكاء الاصطناعي لمنارتك</span>
               </h3>
-              <p className="text-[10px] text-[#E4B343] font-bold">
+              <p className="text-[10px] text-[var(--mn-accent-text)] font-bold">
                 مساعدك الذكي لصناعة قبولك الأكاديمي
               </p>
             </div>
@@ -231,7 +231,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
             onClick={() => setActiveTab('letter')}
             className={`py-2 px-1 rounded-xl text-[11px] font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 cursor-pointer ${
               activeTab === 'letter'
-                ? 'bg-[#003B68] text-[#E4B343] shadow-xs'
+                ? 'bg-[var(--mn-primary)] text-[var(--mn-accent-text)] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -243,7 +243,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
             onClick={() => setActiveTab('cv')}
             className={`py-2 px-1 rounded-xl text-[11px] font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 cursor-pointer ${
               activeTab === 'cv'
-                ? 'bg-[#003B68] text-[#E4B343] shadow-xs'
+                ? 'bg-[var(--mn-primary)] text-[var(--mn-accent-text)] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -255,7 +255,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
             onClick={() => setActiveTab('search')}
             className={`py-2 px-1 rounded-xl text-[11px] font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 cursor-pointer ${
               activeTab === 'search'
-                ? 'bg-[#003B68] text-[#E4B343] shadow-xs'
+                ? 'bg-[var(--mn-primary)] text-[var(--mn-accent-text)] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -267,7 +267,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
             onClick={() => setActiveTab('chat')}
             className={`py-2 px-1 rounded-xl text-[11px] font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 cursor-pointer ${
               activeTab === 'chat'
-                ? 'bg-[#003B68] text-[#E4B343] shadow-xs'
+                ? 'bg-[var(--mn-primary)] text-[var(--mn-accent-text)] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -278,17 +278,19 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
         {/* Tab Contents */}
         <div className="p-4 overflow-y-auto flex-1 text-right space-y-4">
-          
           {/* TAB 1: Motivation Letter Generator */}
           {activeTab === 'letter' && (
             <div className="space-y-3">
               <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950 font-semibold">
-                ✍️ يقوم الذكاء الاصطناعي بصياغة خطاب دافع (Motivation Letter) قوي ومخصص لمعايير لجان القبول الدولية.
+                ✍️ يقوم الذكاء الاصطناعي بصياغة خطاب دافع (Motivation Letter) قوي ومخصص لمعايير لجان
+                القبول الدولية.
               </div>
 
               <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">اسم الطالب:</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    اسم الطالب:
+                  </label>
                   <input
                     type="text"
                     value={studentName}
@@ -298,7 +300,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">لغة الخطاب:</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    لغة الخطاب:
+                  </label>
                   <select
                     value={letterLanguage}
                     onChange={(e) => setLetterLanguage(e.target.value as any)}
@@ -312,7 +316,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
               <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">المنحة المستهدفة:</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    المنحة المستهدفة:
+                  </label>
                   <input
                     type="text"
                     value={scholarshipName}
@@ -322,7 +328,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">الجامعة / التخصص:</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    الجامعة / التخصص:
+                  </label>
                   <input
                     type="text"
                     value={major}
@@ -333,7 +341,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-[11px] font-bold text-stone-700 mb-1">الخلفية الأكاديمية والمهنية المختصرة:</label>
+                <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                  الخلفية الأكاديمية والمهنية المختصرة:
+                </label>
                 <textarea
                   value={background}
                   onChange={(e) => setBackground(e.target.value)}
@@ -343,7 +353,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-[11px] font-bold text-stone-700 mb-1">أهدافك المستقبلية وأثر المنحة عليك:</label>
+                <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                  أهدافك المستقبلية وأثر المنحة عليك:
+                </label>
                 <textarea
                   value={futureGoals}
                   onChange={(e) => setFutureGoals(e.target.value)}
@@ -381,12 +393,16 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                       onClick={handleCopyLetter}
                       className="flex items-center gap-1 text-[11px] font-bold text-amber-700 bg-amber-100 hover:bg-amber-200 px-2.5 py-1 rounded-lg transition-colors"
                     >
-                      {copied ? <Check className="w-3.5 h-3.5 text-[#064D83]" /> : <Copy className="w-3.5 h-3.5" />}
+                      {copied ? (
+                        <Check className="w-3.5 h-3.5 text-[var(--mn-heading)]" />
+                      ) : (
+                        <Copy className="w-3.5 h-3.5" />
+                      )}
                       <span>{copied ? 'تم النسخ بنجاح!' : 'نسخ النص'}</span>
                     </button>
                   </div>
 
-                  <div className="text-xs text-stone-800 leading-relaxed whitespace-pre-line max-h-60 overflow-y-auto p-2 bg-white rounded-xl border border-stone-100 font-sans">
+                  <div className="text-xs text-stone-800 leading-relaxed whitespace-pre-line max-h-60 overflow-y-auto p-2 bg-[var(--mn-surface)] rounded-xl border border-stone-100 font-sans">
                     {generatedLetter}
                   </div>
 
@@ -410,12 +426,15 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
           {activeTab === 'cv' && (
             <div className="space-y-3">
               <div className="p-2.5 rounded-xl bg-blue-50/60 border border-blue-200 text-xs text-slate-900 font-semibold">
-                🎯 اختبر نسبة مطابقة مؤهلاتك مع معايير القبول في كبرى المنح الدولية واعرف نقاط القوة والتحسين.
+                🎯 اختبر نسبة مطابقة مؤهلاتك مع معايير القبول في كبرى المنح الدولية واعرف نقاط القوة
+                والتحسين.
               </div>
 
               <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">المعدل التراكمي (GPA):</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    المعدل التراكمي (GPA):
+                  </label>
                   <input
                     type="text"
                     value={gpa}
@@ -424,7 +443,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">مستوى اللغة (IELTS/TOEFL):</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    مستوى اللغة (IELTS/TOEFL):
+                  </label>
                   <input
                     type="text"
                     value={englishLevel}
@@ -436,7 +457,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
               <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">التخصص المستهدف:</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    التخصص المستهدف:
+                  </label>
                   <input
                     type="text"
                     value={cvMajor}
@@ -445,7 +468,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-bold text-stone-700 mb-1">الدولة أو الوجهة:</label>
+                  <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                    الدولة أو الوجهة:
+                  </label>
                   <input
                     type="text"
                     value={cvCountry}
@@ -456,7 +481,9 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-[11px] font-bold text-stone-700 mb-1">الأنشطة، التطوع، والأبحاث:</label>
+                <label className="block text-[11px] font-bold text-stone-700 mb-1">
+                  الأنشطة، التطوع، والأبحاث:
+                </label>
                 <textarea
                   value={activities}
                   onChange={(e) => setActivities(e.target.value)}
@@ -485,10 +512,12 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
               {/* Evaluation Results */}
               {cvResult && (
-                <div className="mt-3 p-3 bg-white rounded-2xl border-2 border-[#064D83]/40 shadow-md space-y-3">
+                <div className="mt-3 p-3 bg-[var(--mn-surface)] rounded-2xl border-2 border-[var(--mn-border-brand)]/40 shadow-md space-y-3">
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-xs text-stone-500 font-bold">نسبة الجاهزية والقبول:</span>
+                      <span className="text-xs text-stone-500 font-bold">
+                        نسبة الجاهزية والقبول:
+                      </span>
                       <div className="text-xl font-black text-[#002E52]">
                         {cvResult.matchPercentage || 88}%
                       </div>
@@ -500,11 +529,16 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
                   {cvResult.strengths && (
                     <div>
-                      <div className="text-xs font-bold text-[#002E52] mb-1">💪 نقاط القوة في ملفك:</div>
+                      <div className="text-xs font-bold text-[#002E52] mb-1">
+                        💪 نقاط القوة في ملفك:
+                      </div>
                       <div className="space-y-1">
                         {cvResult.strengths.map((s: string, idx: number) => (
-                          <div key={idx} className="flex items-center gap-1.5 text-[11px] text-stone-700">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-[#064D83] shrink-0" />
+                          <div
+                            key={idx}
+                            className="flex items-center gap-1.5 text-[11px] text-stone-700"
+                          >
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[var(--mn-heading)] shrink-0" />
                             <span>{s}</span>
                           </div>
                         ))}
@@ -514,10 +548,15 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
 
                   {cvResult.improvements && (
                     <div>
-                      <div className="text-xs font-bold text-amber-800 mb-1">🚀 فرص التحسين المقترحة:</div>
+                      <div className="text-xs font-bold text-amber-800 mb-1">
+                        🚀 فرص التحسين المقترحة:
+                      </div>
                       <div className="space-y-1">
                         {cvResult.improvements.map((imp: string, idx: number) => (
-                          <div key={idx} className="flex items-center gap-1.5 text-[11px] text-stone-700">
+                          <div
+                            key={idx}
+                            className="flex items-center gap-1.5 text-[11px] text-stone-700"
+                          >
                             <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0" />
                             <span>{imp}</span>
                           </div>
@@ -534,7 +573,8 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
           {activeTab === 'search' && (
             <div className="space-y-3">
               <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950 font-semibold">
-                🔍 اكتب ما تبحث عنه بلغتك الطبيعية وسيقوم الذكاء الاصطناعي باستخراج المعايير وتصفية المنح تلقائياً.
+                🔍 اكتب ما تبحث عنه بلغتك الطبيعية وسيقوم الذكاء الاصطناعي باستخراج المعايير وتصفية
+                المنح تلقائياً.
               </div>
 
               <div>
@@ -543,7 +583,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                   onChange={(e) => setAiSearchPrompt(e.target.value)}
                   rows={3}
                   placeholder="مثال: أريد منحة ممولة بالكامل لدراسة ماجستير هندسة البرمجيات في أوروبا بدون شرط اختبار آيلتس..."
-                  className="w-full py-2 px-3 bg-stone-50 border border-stone-200 rounded-xl text-xs text-stone-800 focus:outline-hidden focus:border-[#064D83]"
+                  className="w-full py-2 px-3 bg-stone-50 border border-stone-200 rounded-xl text-xs text-stone-800 focus:outline-hidden focus:border-[var(--mn-border-brand)]"
                 />
               </div>
 
@@ -582,7 +622,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                             onSelectScholarship(sch);
                             onClose();
                           }}
-                          className="p-2 rounded-xl bg-white border border-stone-200 hover:border-amber-400 flex items-center justify-between cursor-pointer"
+                          className="p-2 rounded-xl bg-[var(--mn-surface)] border border-stone-200 hover:border-amber-400 flex items-center justify-between cursor-pointer"
                         >
                           <div className="flex items-center gap-2">
                             <span>{sch.countryFlag}</span>
@@ -607,15 +647,13 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                 {messages.map((msg, index) => (
                   <div
                     key={index}
-                    className={`flex ${
-                      msg.role === 'user' ? 'justify-start' : 'justify-end'
-                    }`}
+                    className={`flex ${msg.role === 'user' ? 'justify-start' : 'justify-end'}`}
                   >
                     <div
                       className={`max-w-[85%] p-3 rounded-2xl text-xs leading-relaxed ${
                         msg.role === 'user'
                           ? 'bg-[#002E52] text-white rounded-br-none'
-                          : 'bg-white border border-amber-200 text-stone-800 rounded-bl-none shadow-2xs'
+                          : 'bg-[var(--mn-surface)] border border-amber-200 text-stone-800 rounded-bl-none shadow-2xs'
                       }`}
                     >
                       <div className="font-bold text-[10px] text-amber-400 mb-1">
@@ -627,7 +665,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                 ))}
                 {isSendingChat && (
                   <div className="flex justify-end">
-                    <div className="bg-white border border-stone-200 p-2 rounded-2xl text-[11px] text-stone-500 flex items-center gap-1.5">
+                    <div className="bg-[var(--mn-surface)] border border-stone-200 p-2 rounded-2xl text-[11px] text-stone-500 flex items-center gap-1.5">
                       <RefreshCw className="w-3.5 h-3.5 animate-spin text-amber-500" />
                       <span>المستشار يكتب الرد...</span>
                     </div>
@@ -643,7 +681,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
                   onChange={(e) => setChatInput(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSendChat()}
                   placeholder="اسأل المستشار عن أي منحة أو جامعة..."
-                  className="flex-1 py-2 px-3 bg-stone-50 border border-stone-200 rounded-xl text-xs focus:outline-hidden focus:border-[#064D83]"
+                  className="flex-1 py-2 px-3 bg-stone-50 border border-stone-200 rounded-xl text-xs focus:outline-hidden focus:border-[var(--mn-border-brand)]"
                 />
                 <button
                   onClick={handleSendChat}
@@ -655,9 +693,7 @@ export const AIToolsModal: React.FC<AIToolsModalProps> = ({
               </div>
             </div>
           )}
-
         </div>
-
       </div>
     </div>
   );

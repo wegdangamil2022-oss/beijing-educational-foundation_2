@@ -1,4 +1,13 @@
-import { Scholarship, University, Course, Major, ApplicationMilestone, PushNotificationItem, Exam, CountryDestination } from '../types';
+import {
+  Scholarship,
+  University,
+  Course,
+  Major,
+  ApplicationMilestone,
+  PushNotificationItem,
+  Exam,
+  CountryDestination,
+} from '../types';
 
 export const INITIAL_SCHOLARSHIPS: Scholarship[] = [
   {
@@ -16,21 +25,23 @@ export const INITIAL_SCHOLARSHIPS: Scholarship[] = [
       'إعفاء كامل من المصاريف الدراسية ورسوم التسجيل',
       'سكن جامعي مجاني داخل الحرم الجامعي',
       'راتب شهري (2500 يوان للبكالوريوس، 3000 للماجستير، 3500 للدكتوراه)',
-      'تأمين طبي شامل للطلاب الدوليين'
+      'تأمين طبي شامل للطلاب الدوليين',
     ],
     deadline: '2026-03-31',
     daysLeft: 120,
     featured: true,
     tag: 'منحة حكومية',
-    imageUrl: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80',
     field: 'الطب، الهندسة، الذكاء الاصطناعي، الاقتصاد، اللغات',
     requirements: [
       'ألا يزيد العمر عن 25 للبكالوريوس، 35 للماجستير، 40 للدكتوراه',
       'سجل أكاديمي ممتاز وخلو من الأمراض المعدية (فحص طبي رسمي)',
       'يمكن التقديم ببرامج تدرس باللغة الإنجليزية أو الصينية مع سنة تحضيرية مجانية',
-      'خطة دراسية أو مقترح بحثي لا يقل عن 800 كلمة'
+      'خطة دراسية أو مقترح بحثي لا يقل عن 800 كلمة',
     ],
-    description: 'برنامج حكومي شامل يتيح للطلاب من جميع أنحاء العالم متابعة دراساتهم الجامعية والعليا في كبرى الصروح التكنولوجية والأكاديمية الصينية.',
+    description:
+      'برنامج حكومي شامل يتيح للطلاب من جميع أنحاء العالم متابعة دراساتهم الجامعية والعليا في كبرى الصروح التكنولوجية والأكاديمية الصينية.',
     applicationUrl: 'https://www.campuschina.org/',
     withoutIelts: true,
     matchScore: 91,
@@ -50,20 +61,22 @@ export const INITIAL_SCHOLARSHIPS: Scholarship[] = [
       'تغطية كامل الرسوم الدراسية وسنة تعلم اللغة التركية مجاناً',
       'إقامة وسكن جامعي مجاني',
       'راتب شهري منتظم',
-      'تذاكر طيران ذهاب وعودة وتأمين صحي شامل'
+      'تذاكر طيران ذهاب وعودة وتأمين صحي شامل',
     ],
     deadline: '2026-02-20',
     daysLeft: 85,
     featured: true,
     tag: 'منحة حكومية',
-    imageUrl: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80',
     field: 'كافة التخصصات (الهندسة، الطب، الصيدلة، العلوم السياسية، الإدارة)',
     requirements: [
       'معدل لا يقل عن 70% للتخصصات العامة، و90% للتخصصات الطبية',
       'ألا يتجاوز العمر 21 للبكالوريوس، 30 للماجستير، 35 للدكتوراه',
-      'لا تشترط شهادة آيلتس للبرامج باللغة التركية'
+      'لا تشترط شهادة آيلتس للبرامج باللغة التركية',
     ],
-    description: 'واحدة من أشهر وأشمل المنح الدولية التي تقدم تعليماً راقياً وفرصاً متكاملة للطلاب حول العالم.',
+    description:
+      'واحدة من أشهر وأشمل المنح الدولية التي تقدم تعليماً راقياً وفرصاً متكاملة للطلاب حول العالم.',
     applicationUrl: 'https://turkiyeburslari.gov.tr/',
     withoutIelts: true,
     matchScore: 95,
@@ -82,18 +95,19 @@ export const INITIAL_SCHOLARSHIPS: Scholarship[] = [
     financialCoverage: [
       'تغطية الرسوم الجامعية بالكامل',
       'راتب شهري لتغطية نفقات المعيشة في بريطانيا',
-      'تذاكر طيران ذهاب وعودة وبدل سفر'
+      'تذاكر طيران ذهاب وعودة وبدل سفر',
     ],
     deadline: '2026-11-05',
     daysLeft: 240,
     featured: true,
     tag: 'منحة قيادية',
-    imageUrl: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80',
     field: 'كافة التخصصات لدرجة الماجستير لمدة عام واحد',
     requirements: [
       'حصول على شهادة البكالوريوس بتقدير جيد جداً على الأقل',
       'خبرة عمل لا تقل عن سنتين (2,800 ساعة عمل)',
-      'العودة إلى الوطن الأم لمدة عامين بعد انتهاء الدراسة'
+      'العودة إلى الوطن الأم لمدة عامين بعد انتهاء الدراسة',
     ],
     description: 'البرنامج المرموق للحكومة البريطانية لبناء قادة المستقبل وصناع التغيير في العالم.',
     applicationUrl: 'https://www.chevening.org/',
@@ -114,23 +128,24 @@ export const INITIAL_SCHOLARSHIPS: Scholarship[] = [
     financialCoverage: [
       'إعفاء كامل من المصاريف الدراسية',
       'راتب شهري 934 يورو للماجستير و1200 يورو للدكتوراه',
-      'تأمين صحي وبدل سفر ومخصصات عائلية'
+      'تأمين صحي وبدل سفر ومخصصات عائلية',
     ],
     deadline: '2026-10-31',
     daysLeft: 220,
     featured: true,
     tag: 'منحة بحثية',
-    imageUrl: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80',
     field: 'الهندسة، الطاقة المتجددة، إدارة التنمية، الطب، العلوم الطبيعية',
     requirements: [
       'شهادة بكالوريوس لا تتجاوز مدة التخرج 6 سنوات',
-      'خبرة عملية لا تقل عن سنتين في مجال التخصص لبرامج EPOS'
+      'خبرة عملية لا تقل عن سنتين في مجال التخصص لبرامج EPOS',
     ],
     description: 'بوابتك للدراسة والبحث العلمي في أقوى المراكز الأكاديمية والصناعية الأوروبية.',
     applicationUrl: 'https://www.daad.de/',
     withoutIelts: false,
     matchScore: 89,
-  }
+  },
 ];
 
 export const MOCK_UNIVERSITIES: University[] = [
@@ -147,14 +162,31 @@ export const MOCK_UNIVERSITIES: University[] = [
     globalRank: 1,
     scholarshipCount: 42,
     acceptanceRate: '14%',
-    imageUrl: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80',
-    description: 'جامعة أكسفورد هي جامعة بحثية عريقة في مدينة أكسفورد بالمملكة المتحدة، وتُعد من أقدم الجامعات الناطقة باللغة الإنجليزية في العالم. تتميز بنظامها الأكاديمي القوي، وبيئتها البحثية المتقدمة، وتضم عددًا كبيرًا من الكليات والتخصصات في مجالات العلوم والطب والهندسة والعلوم الإنسانية والاجتماعية. تستقبل الجامعة طلابًا وباحثين من مختلف دول العالم، وتُعرف بمكانتها الأكاديمية العالمية وخريجيها البارزين.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80',
+    description:
+      'جامعة أكسفورد هي جامعة بحثية عريقة في مدينة أكسفورد بالمملكة المتحدة، وتُعد من أقدم الجامعات الناطقة باللغة الإنجليزية في العالم. تتميز بنظامها الأكاديمي القوي، وبيئتها البحثية المتقدمة، وتضم عددًا كبيرًا من الكليات والتخصصات في مجالات العلوم والطب والهندسة والعلوم الإنسانية والاجتماعية. تستقبل الجامعة طلابًا وباحثين من مختلف دول العالم، وتُعرف بمكانتها الأكاديمية العالمية وخريجيها البارزين.',
     topMajors: ['الطب والعلوم الحيوية', 'علوم الحاسوب', 'الفلسفة والاقتصاد', 'القانون الدولي'],
     websiteUrl: 'https://www.ox.ac.uk/admissions/graduate/fees-and-funding/scholarships',
     rankings: [
-      { name: 'QS World University Rankings', year: 2027, rank: '#4 عالميًا', link: 'https://www.topuniversities.com/universities/university-oxford' },
-      { name: 'Times Higher Education (THE)', year: 2026, rank: '#1 عالميًا', link: 'https://www.timeshighereducation.com/world-university-rankings/university-oxford' },
-      { name: 'Academic Ranking of World Universities (ARWU)', year: 2026, rank: '#7 عالميًا', link: 'https://www.shanghairanking.com/institution/university-of-oxford' }
+      {
+        name: 'QS World University Rankings',
+        year: 2027,
+        rank: '#4 عالميًا',
+        link: 'https://www.topuniversities.com/universities/university-oxford',
+      },
+      {
+        name: 'Times Higher Education (THE)',
+        year: 2026,
+        rank: '#1 عالميًا',
+        link: 'https://www.timeshighereducation.com/world-university-rankings/university-oxford',
+      },
+      {
+        name: 'Academic Ranking of World Universities (ARWU)',
+        year: 2026,
+        rank: '#7 عالميًا',
+        link: 'https://www.shanghairanking.com/institution/university-of-oxford',
+      },
     ],
     studyPrograms: {
       degrees: ['البكالوريوس', 'الماجستير', 'الدكتوراه (DPhil)', 'دبلومات دراسات عليا'],
@@ -164,7 +196,7 @@ export const MOCK_UNIVERSITIES: University[] = [
         'القانون',
         'العلوم الإنسانية',
         'العلوم الاجتماعية',
-        'الرياضيات وعلوم الحاسب'
+        'الرياضيات وعلوم الحاسب',
       ],
       topKeyMajors: [
         'الطب',
@@ -174,18 +206,19 @@ export const MOCK_UNIVERSITIES: University[] = [
         'الاقتصاد والإدارة',
         'الرياضيات',
         'الفيزياء',
-        'الفلسفة والسياسة والاقتصاد (PPE)'
+        'الفلسفة والسياسة والاقتصاد (PPE)',
       ],
       teachingLanguages: ['الإنجليزية'],
       studyModes: ['حضوري', 'دوام كامل', 'دوام جزئي لبعض برامج الدراسات العليا'],
       undergradDirectoryUrl: 'https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing',
-      postgradDirectoryUrl: 'https://www.ox.ac.uk/admissions/graduate/courses/find-your-course'
+      postgradDirectoryUrl: 'https://www.ox.ac.uk/admissions/graduate/courses/find-your-course',
     },
     tuitionFees: {
       currency: 'جنيه إسترليني (£)',
       currencySymbol: '£',
       annualAverageTuition: '33,050 - 48,620 £ / سنوياً',
-      generalDescription: 'تختلف الرسوم باختلاف الكلية والمرحلة الدراسية وحالة الطالب (محلي / دولي)، ويتم سدادها سنوياً مع وجود رسوم إضافية للكليات السكنية (Colleges).',
+      generalDescription:
+        'تختلف الرسوم باختلاف الكلية والمرحلة الدراسية وحالة الطالب (محلي / دولي)، ويتم سدادها سنوياً مع وجود رسوم إضافية للكليات السكنية (Colleges).',
       undergradTuition: '33,050 - 48,620 £ / سنوياً',
       undergradNote: 'للبرامج النظرية والعلمية لمرحلة البكالوريوس',
       medicineTuition: '48,620 £ / سنوياً',
@@ -194,15 +227,106 @@ export const MOCK_UNIVERSITIES: University[] = [
       engineeringNote: 'يشمل تخصصات الهندسة الكيميائية، المدنية، والميكانيكية',
       postgradTuition: '29,700 - 45,600 £ / سنوياً',
       postgradNote: 'لبرامج الماجستير والماجستير البحثي والدكتوراه',
-      officialTuitionUrl: 'https://www.ox.ac.uk/students/fees-funding/fees/rates'
+      officialTuitionUrl: 'https://www.ox.ac.uk/students/fees-funding/fees/rates',
+    },
+    scholarships: [
+      {
+        id: 'oxford-clarendon-fund',
+        name: 'منحة صندوق كلارندون',
+        nameEn: 'Clarendon Fund Scholarship',
+        type: 'تمويل كامل',
+        audience: 'طلاب الدراسات العليا الدوليون والمحليون',
+        officialUrl:
+          'https://www.ox.ac.uk/admissions/graduate/fees-and-funding/funding/clarendon/about',
+      },
+      {
+        id: 'reach-oxford-scholarship',
+        name: 'منحة ريتش أكسفورد',
+        nameEn: 'Reach Oxford Scholarship',
+        type: 'تمويل كامل',
+        audience: 'طلاب البكالوريوس الدوليون المؤهلون من الدول منخفضة الدخل',
+        officialUrl:
+          'https://www.ox.ac.uk/admissions/undergraduate/fees-and-funding/oxford-bursaries-and-scholarships/reach-oxford',
+      },
+    ],
+    languageRequirements: {
+      required: true,
+      languages: ['اللغة الإنجليزية'],
+      acceptedTests: [
+        'IELTS Academic',
+        'TOEFL iBT',
+        'Cambridge C1 Advanced',
+        'Cambridge C2 Proficiency',
+        'Oxford Test of English Advanced',
+      ],
+      officialUrl:
+        'https://www.ox.ac.uk/admissions/graduate/international-applicants/english-language-requirements',
+    },
+    documentRequirements: {
+      generalDocuments: [
+        'السجل الأكاديمي الرسمي وكشف الدرجات',
+        'خطابات التوصية المطلوبة للبرنامج',
+        'البيان الشخصي أو بيان الغرض من الدراسة',
+        'إثبات اللغة الإنجليزية عند اشتراطه',
+      ],
+      graduateAdditionalDocuments: [
+        'مقترح بحث للبرامج البحثية عند طلبه',
+        'نماذج من الأعمال الكتابية وفق متطلبات البرنامج',
+        'السيرة الذاتية الأكاديمية أو المهنية عند طلبها',
+      ],
+      officialUrl:
+        'https://www.ox.ac.uk/admissions/graduate/application-guide/supporting-documents/supporting-documents-requirements',
+    },
+    housing: {
+      available: true,
+      internationalStudentsEligible: true,
+      typicalCost: '825 - 990 £ شهرياً',
+      currency: 'الجنيه الإسترليني (GBP)',
+      officialUrl: 'https://www.ox.ac.uk/admissions/graduate/colleges/living-in-oxford',
+    },
+    livingCosts: {
+      monthlyEstimate: '1,405 - 2,105 £ شهرياً',
+      currency: 'الجنيه الإسترليني (GBP)',
+      variationNote: 'تختلف التكلفة الفعلية حسب نوع السكن ونمط المعيشة والاحتياجات الشخصية للطالب.',
+      officialUrl: 'https://www.ox.ac.uk/admissions/graduate/fees-and-funding/living-costs',
+    },
+    officialContacts: {
+      phone: '+44 1865 270000',
+      officialWebsite: 'https://www.ox.ac.uk/',
+      mainSocial: {
+        label: 'قنوات جامعة أكسفورد الرسمية',
+        url: 'https://communications.admin.ox.ac.uk/digital-communications/social/social-media-channels',
+      },
+      governmentRegister: {
+        label: 'سجل Office for Students',
+        url: 'https://www.officeforstudents.org.uk/for-providers/registering-with-the-ofs/the-ofs-register/',
+      },
+      usefulLinks: [
+        {
+          label: 'صفحة التواصل الرسمية',
+          url: 'https://www.ox.ac.uk/about/contact-us',
+        },
+        {
+          label: 'دليل التقديم الرسمي',
+          url: 'https://www.ox.ac.uk/admissions/graduate/applying-to-oxford/application-guide',
+        },
+      ],
+    },
+    dataTrust: {
+      lastVerified: 'أغسطس 2026',
+      sourceLabel: 'الموقع الرسمي لجامعة أكسفورد',
+      sourceUrl: 'https://www.ox.ac.uk/',
     },
     internationalAdmissions: {
       acceptsInternationalStudents: true,
-      acceptsDescription: 'نعم، ترحب جامعة أكسفورد بالطلاب الدوليين من أكثر من 160 دولة حول العالم، ويمثل الطلاب الدوليون نحو 46% من إجمالي المجتمع الطلابي بالجامعة.',
+      acceptsDescription:
+        'نعم، ترحب جامعة أكسفورد بالطلاب الدوليين من أكثر من 160 دولة حول العالم، ويمثل الطلاب الدوليون نحو 46% من إجمالي المجتمع الطلابي بالجامعة.',
       undergradAdmissionUrl: 'https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford',
       postgradAdmissionUrl: 'https://www.ox.ac.uk/admissions/graduate/applying-to-oxford',
-      internationalStudentsUrl: 'https://www.ox.ac.uk/admissions/undergraduate/international-students',
-      applicationPortalUrl: 'https://www.ox.ac.uk/admissions/graduate/applying-to-oxford/application-guide',
+      internationalStudentsUrl:
+        'https://www.ox.ac.uk/admissions/undergraduate/international-students',
+      applicationPortalUrl:
+        'https://www.ox.ac.uk/admissions/graduate/applying-to-oxford/application-guide',
     },
   },
   {
@@ -218,15 +342,18 @@ export const MOCK_UNIVERSITIES: University[] = [
     globalRank: 12,
     scholarshipCount: 65,
     acceptanceRate: '9%',
-    imageUrl: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80',
-    description: 'درة الجامعات الآسيوية والمركز الأول في الهندسة والتكنولوجيا والذكاء الاصطناعي مع برامج دولية باللغة الإنجليزية.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80',
+    description:
+      'درة الجامعات الآسيوية والمركز الأول في الهندسة والتكنولوجيا والذكاء الاصطناعي مع برامج دولية باللغة الإنجليزية.',
     topMajors: ['الذكاء الاصطناعي', 'الهندسة الميكانيكية', 'إدارة الأعمال الدولية', 'علوم الفضاء'],
     websiteUrl: 'https://www.tsinghua.edu.cn/en/',
     tuitionFees: {
       currency: 'يوان صيني (¥)',
       currencySymbol: '¥',
       annualAverageTuition: '30,000 - 50,000 ¥ / سنوياً (≈ 4,200 - 7,000 $)',
-      generalDescription: 'رسوم منخفضة وتنافسية للغاية وتتوفر تغطية شاملة عبر المنحة الحكومية الصينية (CSC) ومنح بلدية بكين.',
+      generalDescription:
+        'رسوم منخفضة وتنافسية للغاية وتتوفر تغطية شاملة عبر المنحة الحكومية الصينية (CSC) ومنح بلدية بكين.',
       undergradTuition: '30,000 - 40,000 ¥ / سنوياً',
       undergradNote: 'للبرامج الإنسانية والعلوم التطبيقية',
       medicineTuition: '45,000 ¥ / سنوياً',
@@ -235,14 +362,16 @@ export const MOCK_UNIVERSITIES: University[] = [
       engineeringNote: 'كليات هندسة الحاسوب والذكاء الاصطناعي والميكانيك',
       postgradTuition: '33,000 - 45,000 ¥ / سنوياً',
       postgradNote: 'لبرامج الماجستير الدولي والدكتوراه',
-      officialTuitionUrl: 'https://www.tsinghua.edu.cn/en/Admissions/International_Students.htm'
+      officialTuitionUrl: 'https://www.tsinghua.edu.cn/en/Admissions/International_Students.htm',
     },
     internationalAdmissions: {
       acceptsInternationalStudents: true,
-      acceptsDescription: 'نعم، تفتح جامعة تسينغهوا أبوابها للطلاب الدوليين من شتى أنحاء العالم مع توفير برامج دراسية كاملة باللغة الإنجليزية ومقاعد مخصصة للمنح الحكومية.',
+      acceptsDescription:
+        'نعم، تفتح جامعة تسينغهوا أبوابها للطلاب الدوليين من شتى أنحاء العالم مع توفير برامج دراسية كاملة باللغة الإنجليزية ومقاعد مخصصة للمنح الحكومية.',
       undergradAdmissionUrl: 'https://international.tsinghua.edu.cn/',
       postgradAdmissionUrl: 'https://gradadmission.tsinghua.edu.cn/',
-      internationalStudentsUrl: 'https://www.tsinghua.edu.cn/en/Admissions/International_Students.htm',
+      internationalStudentsUrl:
+        'https://www.tsinghua.edu.cn/en/Admissions/International_Students.htm',
       applicationPortalUrl: 'https://tsinghua.17gz.org/',
     },
   },
@@ -259,15 +388,18 @@ export const MOCK_UNIVERSITIES: University[] = [
     globalRank: 28,
     scholarshipCount: 38,
     acceptanceRate: '18%',
-    imageUrl: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=600&q=80',
-    description: 'إحدى جامعات النخبة الأوروبية ومهد الابتكار الصناعي والهندسي في قلب ولاية بافاريا.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=600&q=80',
+    description:
+      'إحدى جامعات النخبة الأوروبية ومهد الابتكار الصناعي والهندسي في قلب ولاية بافاريا.',
     topMajors: ['هندسة السيارات والكهرباء', 'المعلوماتية', 'الروبوتات', 'الفيزياء التطبيقية'],
     websiteUrl: 'https://www.tum.de/en/',
     tuitionFees: {
       currency: 'يورو (€)',
       currencySymbol: '€',
       annualAverageTuition: '4,000 - 6,000 € / للفصل الدراسي للطلاب الدوليين',
-      generalDescription: 'فرضت ولاية بافاريا رسوماً للطلاب من خارج الاتحاد الأوروبي تتراوح بين 2,000 إلى 3,000 يورو لكل فصل، بالإضافة إلى مساهمة الفصل الطلابي الإلزامية (≈ 85 €).',
+      generalDescription:
+        'فرضت ولاية بافاريا رسوماً للطلاب من خارج الاتحاد الأوروبي تتراوح بين 2,000 إلى 3,000 يورو لكل فصل، بالإضافة إلى مساهمة الفصل الطلابي الإلزامية (≈ 85 €).',
       undergradTuition: '2,000 - 3,000 € / لكل فصل دراسي',
       undergradNote: 'للطلاب الدوليين من خارج الاتحاد الأوروبي',
       medicineTuition: '3,000 € / لكل فصل دراسي',
@@ -276,11 +408,12 @@ export const MOCK_UNIVERSITIES: University[] = [
       engineeringNote: 'كليات الهندسة والمعلوماتية وعلوم الحاسب',
       postgradTuition: '4,000 - 6,000 € / سنوياً',
       postgradNote: 'لبرامج الماجستير التخصصية',
-      officialTuitionUrl: 'https://www.tum.de/en/studies/fees'
+      officialTuitionUrl: 'https://www.tum.de/en/studies/fees',
     },
     internationalAdmissions: {
       acceptsInternationalStudents: true,
-      acceptsDescription: 'نعم، تقبل TUM الطلاب الدوليين في مختلف التخصصات الهندسية والتقنية، وتُعد من أكثر الجامعات الألمانية جذباً للدارسين الأجانب.',
+      acceptsDescription:
+        'نعم، تقبل TUM الطلاب الدوليين في مختلف التخصصات الهندسية والتقنية، وتُعد من أكثر الجامعات الألمانية جذباً للدارسين الأجانب.',
       undergradAdmissionUrl: 'https://www.tum.de/en/studies/degree-programs',
       postgradAdmissionUrl: 'https://www.tum.de/en/studies/application/master',
       internationalStudentsUrl: 'https://www.tum.de/en/studies/international-students',
@@ -300,15 +433,18 @@ export const MOCK_UNIVERSITIES: University[] = [
     globalRank: 35,
     scholarshipCount: 29,
     acceptanceRate: '22%',
-    imageUrl: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80',
-    description: 'تاريخ عريق يمتد لقرون في باريس يجمع بين العلوم الإنسانية والفنون والعلوم الدقيقة والتطبيقية.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80',
+    description:
+      'تاريخ عريق يمتد لقرون في باريس يجمع بين العلوم الإنسانية والفنون والعلوم الدقيقة والتطبيقية.',
     topMajors: ['الأدب المقارن', 'الرياضيات المتقدمة', 'علم الآثار', 'العلوم البيئية البحرية'],
     websiteUrl: 'https://www.sorbonne-universite.fr/en',
     tuitionFees: {
       currency: 'يورو (€)',
       currencySymbol: '€',
       annualAverageTuition: '2,770 - 3,770 € / سنوياً للطلاب الدوليين',
-      generalDescription: 'رسوم جامعية مدعومة جزئياً من الدولة الفرنسية، مع إمكانية الحصول على إعفاءات كاملة عبر برنامج منح إيفل ومنح السوربون للتميز.',
+      generalDescription:
+        'رسوم جامعية مدعومة جزئياً من الدولة الفرنسية، مع إمكانية الحصول على إعفاءات كاملة عبر برنامج منح إيفل ومنح السوربون للتميز.',
       undergradTuition: '2,770 € / سنوياً (Licence)',
       undergradNote: 'للطلاب الدوليين غير المنتمين للاتحاد الأوروبي',
       medicineTuition: '3,770 € / سنوياً',
@@ -316,13 +452,15 @@ export const MOCK_UNIVERSITIES: University[] = [
       // لا توجد كلية هندسة مستقلة في السوربون (اختبار إخفاء القسم الفرعي غير المتوفر)
       postgradTuition: '3,770 € / سنوياً (Master) • 380 € (Doctorat)',
       postgradNote: 'لبرامج الماجستير والدكتوراه',
-      officialTuitionUrl: 'https://www.sorbonne-universite.fr/en/education/admissions/tuition-fees'
+      officialTuitionUrl: 'https://www.sorbonne-universite.fr/en/education/admissions/tuition-fees',
     },
     internationalAdmissions: {
       acceptsInternationalStudents: true,
-      acceptsDescription: 'نعم، تستقبل جامعة السوربون آلاف الطلاب الدوليين سنوياً عبر منصات التقديم الفرنسية المعتمدة وبرامج التبادل الأوروبي.',
+      acceptsDescription:
+        'نعم، تستقبل جامعة السوربون آلاف الطلاب الدوليين سنوياً عبر منصات التقديم الفرنسية المعتمدة وبرامج التبادل الأوروبي.',
       undergradAdmissionUrl: 'https://www.sorbonne-universite.fr/en/education/admissions',
-      postgradAdmissionUrl: 'https://www.sorbonne-universite.fr/en/education/admissions/masters-degree',
+      postgradAdmissionUrl:
+        'https://www.sorbonne-universite.fr/en/education/admissions/masters-degree',
       internationalStudentsUrl: 'https://www.sorbonne-universite.fr/en/international',
       applicationPortalUrl: 'https://www.campusfrance.org/',
     },
@@ -340,15 +478,18 @@ export const MOCK_UNIVERSITIES: University[] = [
     globalRank: 23,
     scholarshipCount: 50,
     acceptanceRate: '12%',
-    imageUrl: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80',
-    description: 'أرقى صرح أكاديمي في اليابان، متميزة ببرامج منح MEXT الحكومية ومختبرات الابتكار النانوية.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80',
+    description:
+      'أرقى صرح أكاديمي في اليابان، متميزة ببرامج منح MEXT الحكومية ومختبرات الابتكار النانوية.',
     topMajors: ['الروبوتات المتقدمة', 'الهندسة الحيوية', 'الاقتصاد الآسيوي', 'علوم الفلك'],
     websiteUrl: 'https://www.u-tokyo.ac.jp/en/',
     tuitionFees: {
       currency: 'ين ياباني (¥)',
       currencySymbol: '¥',
       annualAverageTuition: '535,800 ¥ / سنوياً (≈ 3,500 $)',
-      generalDescription: 'رسوم دراسية موحدة لجميع الجامعات الوطنية اليابانية، وتتوفر إعفاءات كاملة بنسبة 100% للطلاب المتفوقين ومنح حكومية سخية.',
+      generalDescription:
+        'رسوم دراسية موحدة لجميع الجامعات الوطنية اليابانية، وتتوفر إعفاءات كاملة بنسبة 100% للطلاب المتفوقين ومنح حكومية سخية.',
       undergradTuition: '535,800 ¥ / سنوياً (+ 282,000 ¥ رسوم قبول لمرة واحدة)',
       undergradNote: 'لبرامج البكالوريوس وبرامج PEAK الدولية بالإنجليزية',
       medicineTuition: '535,800 ¥ / سنوياً',
@@ -357,17 +498,20 @@ export const MOCK_UNIVERSITIES: University[] = [
       engineeringNote: 'كلية الهندسة والابتكار التكنولوجي',
       postgradTuition: '535,800 ¥ / سنوياً',
       postgradNote: 'لبرامج الماجستير والدكتوراه',
-      officialTuitionUrl: 'https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html'
+      officialTuitionUrl: 'https://www.u-tokyo.ac.jp/en/prospective-students/tuition_fees.html',
     },
     internationalAdmissions: {
       acceptsInternationalStudents: true,
-      acceptsDescription: 'نعم، ترحب جامعة طوكيو بالطلاب الدوليين مع توفير برامج PEAK و GSP المخصصة للطلاب الأجانب باللغة الإنجليزية.',
+      acceptsDescription:
+        'نعم، ترحب جامعة طوكيو بالطلاب الدوليين مع توفير برامج PEAK و GSP المخصصة للطلاب الأجانب باللغة الإنجليزية.',
       undergradAdmissionUrl: 'https://www.u-tokyo.ac.jp/en/prospective-students/undergraduate.html',
-      postgradAdmissionUrl: 'https://www.u-tokyo.ac.jp/en/prospective-students/graduate_course.html',
-      internationalStudentsUrl: 'https://www.u-tokyo.ac.jp/en/prospective-students/international-students.html',
+      postgradAdmissionUrl:
+        'https://www.u-tokyo.ac.jp/en/prospective-students/graduate_course.html',
+      internationalStudentsUrl:
+        'https://www.u-tokyo.ac.jp/en/prospective-students/international-students.html',
       applicationPortalUrl: 'https://www.u-tokyo.ac.jp/en/prospective-students/admissions.html',
     },
-  }
+  },
 ];
 
 export const MOCK_COURSES: Course[] = [
@@ -383,7 +527,8 @@ export const MOCK_COURSES: Course[] = [
     isFree: true,
     rating: 4.9,
     studentsCount: 14200,
-    imageUrl: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80',
     category: 'إعداد الملف الشخصي',
     progressPercent: 75,
   },
@@ -399,7 +544,8 @@ export const MOCK_COURSES: Course[] = [
     isFree: true,
     rating: 4.8,
     studentsCount: 28500,
-    imageUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80',
     category: 'اختبارات اللغة',
     progressPercent: 30,
   },
@@ -415,7 +561,8 @@ export const MOCK_COURSES: Course[] = [
     isFree: true,
     rating: 4.7,
     studentsCount: 9800,
-    imageUrl: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80',
     category: 'إعداد الملف الشخصي',
     progressPercent: 100,
   },
@@ -431,10 +578,11 @@ export const MOCK_COURSES: Course[] = [
     isFree: false,
     rating: 4.9,
     studentsCount: 6400,
-    imageUrl: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80',
     category: 'البحث العلمي',
     progressPercent: 0,
-  }
+  },
 ];
 
 export const MOCK_MAJORS: Major[] = [
@@ -445,7 +593,8 @@ export const MOCK_MAJORS: Major[] = [
     nameEn: 'Medicine and Surgery',
     category: 'كلية الطب والعلوم الطبية الأساسية',
     iconName: 'Activity',
-    description: 'برنامج يجمع العلوم الطبية الأساسية بالتدريب السريري لفهم جسم الإنسان والمرض والتشخيص والعلاج والوقاية والرعاية الصحية.',
+    description:
+      'برنامج يجمع العلوم الطبية الأساسية بالتدريب السريري لفهم جسم الإنسان والمرض والتشخيص والعلاج والوقاية والرعاية الصحية.',
     averageScholarships: 120,
     futureDemand: 'مرتفع جداً',
     topCountries: ['الولايات المتحدة', 'المملكة المتحدة', 'كندا', 'ألمانيا'],
@@ -454,9 +603,12 @@ export const MOCK_MAJORS: Major[] = [
     degreeLevelName: 'بكالوريوس — Bachelor',
     duration: '5-6 سنوات',
     commonDegrees: 'MBBS، MBChB، BMBS، MBBCh',
-    natureOfStudy: 'برنامج مهني أساسي لتأهيل الطبيب، وليس تخصصًا دقيقًا مثل الجراحة العامة أو طب الأطفال.',
-    aboutMajor: 'الطب والجراحة هو البرنامج الأساسي الذي يدرس فيه الطالب الطب كعلم وممارسة مهنية. يبدأ عادةً بالتشريح ووظائف الأعضاء والعلوم الحيوية وآليات المرض، ثم ينتقل تدريجيًا إلى التعامل مع المرضى، وأخذ التاريخ المرضي، والفحص السريري، والتشخيص والعلاج والتدريب في الأقسام السريرية.',
-    aboutMajorNote: 'وجود كلمة «الجراحة» في اسم الدرجة لا يعني أن الخريج يصبح جرّاحًا متخصصًا. الجراحة التخصصية تحتاج لاحقًا إلى إقامة وتدريب اختصاصي بعد التخرج.',
+    natureOfStudy:
+      'برنامج مهني أساسي لتأهيل الطبيب، وليس تخصصًا دقيقًا مثل الجراحة العامة أو طب الأطفال.',
+    aboutMajor:
+      'الطب والجراحة هو البرنامج الأساسي الذي يدرس فيه الطالب الطب كعلم وممارسة مهنية. يبدأ عادةً بالتشريح ووظائف الأعضاء والعلوم الحيوية وآليات المرض، ثم ينتقل تدريجيًا إلى التعامل مع المرضى، وأخذ التاريخ المرضي، والفحص السريري، والتشخيص والعلاج والتدريب في الأقسام السريرية.',
+    aboutMajorNote:
+      'وجود كلمة «الجراحة» في اسم الدرجة لا يعني أن الخريج يصبح جرّاحًا متخصصًا. الجراحة التخصصية تحتاج لاحقًا إلى إقامة وتدريب اختصاصي بعد التخرج.',
     whatYouWillStudy: [
       'أخذ التاريخ المرضي.',
       'الفحص السريري.',
@@ -466,7 +618,7 @@ export const MOCK_MAJORS: Major[] = [
       'مبادئ العلاج الدوائي.',
       'مبادئ العلاج الجراحي.',
       'الوقاية من الأمراض.',
-      'التدريب السريري في المستشفيات والعيادات.'
+      'التدريب السريري في المستشفيات والعيادات.',
     ],
     foundationSubjects: [
       'الأحياء العامة والخلوية',
@@ -475,7 +627,7 @@ export const MOCK_MAJORS: Major[] = [
       'الفيزياء الطبية الأساسية',
       'الإحصاء الحيوي',
       'المصطلحات الطبية',
-      'مبادئ البحث الطبي والوبائيات'
+      'مبادئ البحث الطبي والوبائيات',
     ],
     coreSubjects: [
       'التشريح البشري',
@@ -493,7 +645,7 @@ export const MOCK_MAJORS: Major[] = [
       'طب الأسرة والمجتمع',
       'الطب النفسي',
       'طب الطوارئ',
-      'الأخلاقيات والطب الشرعي بحسب المنهج'
+      'الأخلاقيات والطب الشرعي بحسب المنهج',
     ],
     practicalSide: [
       'مختبرات التشريح والأنسجة والعلوم الأساسية.',
@@ -504,7 +656,7 @@ export const MOCK_MAJORS: Major[] = [
       'التدريب في المستشفيات والعيادات.',
       'مناقشة الحالات والتشخيص التفريقي.',
       'المناوبات أو التدريب السريري.',
-      'مشروع بحث أو مشروع تخرج في بعض البرامج.'
+      'مشروع بحث أو مشروع تخرج في بعض البرامج.',
     ],
     acquiredSkills: [
       'أخذ التاريخ المرضي.',
@@ -520,7 +672,7 @@ export const MOCK_MAJORS: Major[] = [
       'الوقاية ومكافحة العدوى.',
       'سلامة المرضى.',
       'توثيق المعلومات الطبية.',
-      'كتابة الملخصات السريرية.'
+      'كتابة الملخصات السريرية.',
     ],
     subSpecialties: [
       'الطب الباطني.',
@@ -533,7 +685,7 @@ export const MOCK_MAJORS: Major[] = [
       'الأشعة والتصوير الطبي.',
       'علم الأمراض والمختبرات.',
       'التخدير والعناية الحرجة.',
-      'الصحة العامة والطب الوقائي.'
+      'الصحة العامة والطب الوقائي.',
     ],
     workFields: [
       'المستشفيات.',
@@ -546,16 +698,20 @@ export const MOCK_MAJORS: Major[] = [
       'التعليم الطبي بعد استكمال المتطلبات.',
       'الإدارة والسياسات الصحية بعد التأهيل المناسب.',
       'الصناعات الدوائية.',
-      'شركات التقنيات الطبية في الأدوار الطبية والعلمية.'
+      'شركات التقنيات الطبية في الأدوار الطبية والعلمية.',
     ],
     relatedJobs: [
       { job: 'طبيب امتياز / طبيب متدرب', entry: 'بعد إكمال الدرجة وفق نظام الدولة' },
       { job: 'طبيب عام', entry: 'بعد استكمال الترخيص والمتطلبات المحلية' },
       { job: 'طبيب مقيم', entry: 'بعد القبول في برنامج إقامة' },
-      { job: 'باحث طبي / مساعد أبحاث سريرية', entry: 'ممكن بعد الدرجة، مع تأهيل إضافي لبعض الوظائف' },
-      { job: 'مسؤول طبي أو صحي', entry: 'غالبًا يحتاج خبرة أو تأهيلًا إضافيًا' }
+      {
+        job: 'باحث طبي / مساعد أبحاث سريرية',
+        entry: 'ممكن بعد الدرجة، مع تأهيل إضافي لبعض الوظائف',
+      },
+      { job: 'مسؤول طبي أو صحي', entry: 'غالبًا يحتاج خبرة أو تأهيلًا إضافيًا' },
     ],
-    postgraduateOpportunitiesIntro: 'المسار الأهم بعد الطب ليس الماجستير فقط، بل غالبًا الإقامة الطبية Residency ثم الاختصاص. كما يمكن متابعة الدراسات العليا المهنية والبحثية:',
+    postgraduateOpportunitiesIntro:
+      'المسار الأهم بعد الطب ليس الماجستير فقط، بل غالبًا الإقامة الطبية Residency ثم الاختصاص. كما يمكن متابعة الدراسات العليا المهنية والبحثية:',
     postgraduateOpportunities: [
       'الصحة العامة.',
       'الوبائيات.',
@@ -566,18 +722,32 @@ export const MOCK_MAJORS: Major[] = [
       'الطب الجزيئي.',
       'المعلوماتية الصحية.',
       'الصحة العالمية.',
-      'الأخلاقيات الطبية.'
+      'الأخلاقيات الطبية.',
     ],
     similarMajors: [
       { name: 'الطب العام', difference: 'غالبًا تسمية بديلة أو محلية للدرجة الطبية الأساسية' },
       { name: 'الطب البشري', difference: 'غالبًا اسم بديل يميز طب الإنسان عن الطب البيطري' },
-      { name: 'العلوم الطبية', difference: 'يدرس العلوم الطبية لكنه لا يؤهل عادةً لممارسة مهنة الطبيب' },
-      { name: 'العلوم الطبية الحيوية', difference: 'يركز أكثر على البحث والآليات البيولوجية والجزيئية للمرض' }
+      {
+        name: 'العلوم الطبية',
+        difference: 'يدرس العلوم الطبية لكنه لا يؤهل عادةً لممارسة مهنة الطبيب',
+      },
+      {
+        name: 'العلوم الطبية الحيوية',
+        difference: 'يركز أكثر على البحث والآليات البيولوجية والجزيئية للمرض',
+      },
     ],
     academicAlertPoints: [
-      { num: '١', title: 'ممارسة المهنة والتراخيص', desc: 'الحصول على الدرجة الطبية الأولى لا يمنح الحق في الممارسة المستقلة مباشرة؛ بل يتطلب إتمام سنة الامتياز واجتياز اختبارات مزاولة المهنة والتسجيل في الهيئة الصحية المعنية.' },
-      { num: '٢', title: 'ألقاب الاختصاص والجراحة', desc: 'حمل لقب طبيب اختصاصي أو جرّاح يتطلب الالتحاق ببرنامج إقامة طبية (Residency) وتدريب سريري تخصصي بعد التخرج من كلية الطب.' }
-    ]
+      {
+        num: '١',
+        title: 'ممارسة المهنة والتراخيص',
+        desc: 'الحصول على الدرجة الطبية الأولى لا يمنح الحق في الممارسة المستقلة مباشرة؛ بل يتطلب إتمام سنة الامتياز واجتياز اختبارات مزاولة المهنة والتسجيل في الهيئة الصحية المعنية.',
+      },
+      {
+        num: '٢',
+        title: 'ألقاب الاختصاص والجراحة',
+        desc: 'حمل لقب طبيب اختصاصي أو جرّاح يتطلب الالتحاق ببرنامج إقامة طبية (Residency) وتدريب سريري تخصصي بعد التخرج من كلية الطب.',
+      },
+    ],
   },
   {
     id: 'mas-0001',
@@ -588,7 +758,8 @@ export const MOCK_MAJORS: Major[] = [
     academicField: 'كلية الطب والعلوم الطبية الأساسية',
     associatedMajor: 'العلوم الطبية والمجالات الطبية الأساسية ذات الصلة',
     iconName: 'Microscope',
-    description: 'برنامج دراسات عليا متقدم يركز على الفهم العميق للعلوم الطبية والحيوية، والآليات الجزيئية والمرضية، ومنهجيات البحث العلمي، وتطبيقاتها في الصحة والمرض.',
+    description:
+      'برنامج دراسات عليا متقدم يركز على الفهم العميق للعلوم الطبية والحيوية، والآليات الجزيئية والمرضية، ومنهجيات البحث العلمي، وتطبيقاتها في الصحة والمرض.',
     averageScholarships: 95,
     futureDemand: 'مرتفع جداً',
     topCountries: ['المملكة المتحدة', 'الولايات المتحدة', 'كندا', 'ألمانيا', 'السويد'],
@@ -599,15 +770,17 @@ export const MOCK_MAJORS: Major[] = [
     commonDegrees: 'MSc / MRes / MMSc',
     programTypes: 'بحثي، مقررات ورسالة، أو مختلط؛ وقد يطرح مهنيًا في بعض المؤسسات',
     studyModes: 'حضوري غالبًا؛ وقد تتوفر بعض المقررات النظرية مدمجة بحسب الجامعة',
-    aboutMajor: 'ماجستير العلوم الطبية هو برنامج دراسات عليا يهدف إلى تعميق المعرفة في الأسس العلمية للطب والصحة، وتطوير المهارات البحثية والمخبرية والتحليلية. يركز البرنامج على دراسة آليات الأمراض، والبيولوجيا الجزيئية والخلوية، والبحث الطبي الانتقالي، والتقنيات الحديثة المستخدمة في التشخيص والتطوير العلاجي، مع إعداد الطالب للمسار الأكاديمي، أو البحثي، أو المهني المتقدم.',
-    aboutMajorNote: 'ماجستير العلوم الطبية هو برنامج دراسات عليا أكاديمي/بحثي، ولا يعادل بمفرده برنامج الإقامة الطبية السريرية (Residency)، ولا يمنح وحده ترخيص الممارسة كطبيب ممارس إذا لم يكن الطالب مؤهلًا طبيًا في الأصل.',
+    aboutMajor:
+      'ماجستير العلوم الطبية هو برنامج دراسات عليا يهدف إلى تعميق المعرفة في الأسس العلمية للطب والصحة، وتطوير المهارات البحثية والمخبرية والتحليلية. يركز البرنامج على دراسة آليات الأمراض، والبيولوجيا الجزيئية والخلوية، والبحث الطبي الانتقالي، والتقنيات الحديثة المستخدمة في التشخيص والتطوير العلاجي، مع إعداد الطالب للمسار الأكاديمي، أو البحثي، أو المهني المتقدم.',
+    aboutMajorNote:
+      'ماجستير العلوم الطبية هو برنامج دراسات عليا أكاديمي/بحثي، ولا يعادل بمفرده برنامج الإقامة الطبية السريرية (Residency)، ولا يمنح وحده ترخيص الممارسة كطبيب ممارس إذا لم يكن الطالب مؤهلًا طبيًا في الأصل.',
     targetBackgrounds: [
       'خريجو كليات الطب البشري (MBBS / MD).',
       'خريجو كليات طب الأسنان.',
       'خريجو الصيدلة ودكتور صيدلة (PharmD).',
       'خريجو العلوم الطبية التطبيقية (المختبرات الطبية، التقنية الحيوية الطبية، الأشعة، وغيرها).',
       'خريجو العلوم الحيوية والبيولوجيا العامة، الكيمياء الحيوية، والأحياء الدقيقة.',
-      'المهنيون الصحيون الراغبون في تعزيز مسارهم البحثي أو الأكاديمي.'
+      'المهنيون الصحيون الراغبون في تعزيز مسارهم البحثي أو الأكاديمي.',
     ],
     foundationSubjects: [
       'مناهج البحث العلمي في العلوم الطبية.',
@@ -615,7 +788,7 @@ export const MOCK_MAJORS: Major[] = [
       'أخلاقيات البحث الطبي والحيواني والسريري.',
       'الكتابة الأكاديمية ونشر الأوراق العلمية.',
       'السلامة المخبرية وإدارة الجودة في الأبحاث.',
-      'قراءة وتطبيق النقد العلمي للأوراق الطبية (Journal Club).'
+      'قراءة وتطبيق النقد العلمي للأوراق الطبية (Journal Club).',
     ],
     coreSubjects: [
       'البيولوجيا الجزيئية المتقدمة والوراثة الطبية.',
@@ -625,7 +798,7 @@ export const MOCK_MAJORS: Major[] = [
       'علم وظائف الأعضاء المتقدم.',
       'الكيمياء الحيوية السريرية المتقدمة.',
       'الأحياء الدقيقة الطبية المتقدمة والعدوى.',
-      'تقنيات البحث الطبي الانتقالي والطب الحيوي.'
+      'تقنيات البحث الطبي الانتقالي والطب الحيوي.',
     ],
     practicalSide: [
       'العمل المخبري المتقدم (PCR، Western Blot، Flow Cytometry، زراعة الخلايا، وغيرها).',
@@ -633,7 +806,7 @@ export const MOCK_MAJORS: Major[] = [
       'كتابة مقترح البحث العلمي (Research Proposal).',
       'التدريب على التقنيات الحيوية والتحليل الوراثي والجزيئي.',
       'إعداد رسالة الماجستير (Thesis / Dissertation) أو المشروع البحثي المستقل.',
-      'التدريب الميداني أو البحثي في مراكز الأبحاث أو المستشفيات الجامعية.'
+      'التدريب الميداني أو البحثي في مراكز الأبحاث أو المستشفيات الجامعية.',
     ],
     subSpecialties: [
       'مسار البيولوجيا الجزيئية الطبية والجينوميات.',
@@ -642,7 +815,7 @@ export const MOCK_MAJORS: Major[] = [
       'مسار أبحاث السرطان وبيولوجيا الأورام.',
       'مسار علوم الأعصاب الطبية.',
       'مسار أبحاث القلب والأوعية الدموية.',
-      'مسار البحث السريري والانتقالي.'
+      'مسار البحث السريري والانتقالي.',
     ],
     graduationRequirements: [
       'إتمام الساعات المعتمدة للمقررات الإجبارية والاختيارية بنجاح.',
@@ -650,7 +823,7 @@ export const MOCK_MAJORS: Major[] = [
       'إجراء البحث العملي/المخبري أو التحليلي وفق خطة معتمدة.',
       'كتابة رسالة ماجستير متكاملة (Thesis).',
       'مناقشة الرسالة علنياً أمام لجنة التحكيم الأكاديمية (Defense).',
-      'نشر ورقة علمية أو تقديم ملصق بحثي في مؤتمر (مطلوب أو مفضل في بعض البرامج).'
+      'نشر ورقة علمية أو تقديم ملصق بحثي في مؤتمر (مطلوب أو مفضل في بعض البرامج).',
     ],
     acquiredSkills: [
       'تصميم وتنفيذ المشاريع البحثية الطبية.',
@@ -660,7 +833,7 @@ export const MOCK_MAJORS: Major[] = [
       'الصياغة الأكاديمية المتقدمة للبحوث والمنح.',
       'استخدام قواعد البيانات الجينومية والبرمجيات الحيوية (Bioinformatics).',
       'حل المشكلات العلمية والتشخيصية البحثية.',
-      'العمل ضمن فرق بحثية متعددة التخصصات.'
+      'العمل ضمن فرق بحثية متعددة التخصصات.',
     ],
     workFields: [
       'مراكز الأبحاث الطبية والبيولوجية الحيوية.',
@@ -669,33 +842,70 @@ export const MOCK_MAJORS: Major[] = [
       'مختبرات التشخيص المتقدمة والمستشفيات التخصصية.',
       'الهيئات الصحية والرقابية وهيئات الغذاء والدواء (تنظيم الأبحاث وتقييم المنتجات).',
       'إدارة المشاريع البحثية والتجارب السريرية (Clinical Research Coordinator / Associate).',
-      'قطاع استشارات التقنية الحيوية والصحة العامة.'
+      'قطاع استشارات التقنية الحيوية والصحة العامة.',
     ],
     relatedJobs: [
-      { job: 'باحث طبي / أخصائي أبحاث طبية (Medical Researcher)', entry: 'بعد التخرج مباشرة في المراكز البحثية' },
-      { job: 'منسق أبحاث سريرية (Clinical Research Coordinator - CRC)', entry: 'بعد التخرج، مع تدريب تنظيمي إضافي مفضل' },
-      { job: 'أخصائي مختبر أبحاث / تقني أبحاث جزيئية', entry: 'متاح مباشرة في المختبرات الأكاديمية والصناعية' },
+      {
+        job: 'باحث طبي / أخصائي أبحاث طبية (Medical Researcher)',
+        entry: 'بعد التخرج مباشرة في المراكز البحثية',
+      },
+      {
+        job: 'منسق أبحاث سريرية (Clinical Research Coordinator - CRC)',
+        entry: 'بعد التخرج، مع تدريب تنظيمي إضافي مفضل',
+      },
+      {
+        job: 'أخصائي مختبر أبحاث / تقني أبحاث جزيئية',
+        entry: 'متاح مباشرة في المختبرات الأكاديمية والصناعية',
+      },
       { job: 'محاضر / معيد جامعي', entry: 'بحسب شروط الجامعات ولوائح التعيين الأكاديمي' },
-      { job: 'مسؤول علمي أو شؤون تنظيمية في شركات الأدوية', entry: 'بعد التخرج، وقد يتطلب خبرة باللوائح التنظيمية' },
-      { job: 'عالم مشارك / Associate Scientist', entry: 'في مراكز التطوير والتقنية الحيوية' }
+      {
+        job: 'مسؤول علمي أو شؤون تنظيمية في شركات الأدوية',
+        entry: 'بعد التخرج، وقد يتطلب خبرة باللوائح التنظيمية',
+      },
+      { job: 'عالم مشارك / Associate Scientist', entry: 'في مراكز التطوير والتقنية الحيوية' },
     ],
-    postgraduateOpportunitiesIntro: 'بعد الحصول على الماجستير في العلوم الطبية، تتاح للخريج مسارات أكاديمية ومهنية متقدمة تشمل:',
+    postgraduateOpportunitiesIntro:
+      'بعد الحصول على الماجستير في العلوم الطبية، تتاح للخريج مسارات أكاديمية ومهنية متقدمة تشمل:',
     postgraduateOpportunities: [
       'الدكتوراه (PhD) في العلوم الطبية أو العلوم الحيوية الطبية أو التخصصات الدقيقة.',
       'برامج الإقامة الطبية السريرية (لخريجي الطب البشري الراغبين بالمسار الإكلينيكي).',
       'الزمالات البحثية بعد الماجستير (Research Fellowships).',
-      'برامج القيادة والإدارة في القطاع الصحي والبحثي.'
+      'برامج القيادة والإدارة في القطاع الصحي والبحثي.',
     ],
     similarMajors: [
-      { name: 'ماجستير العلوم الطبية الحيوية (Biomedical Sciences)', difference: 'يركز بشكل أشمل على العلوم الأساسية والبيولوجيا التطبيقية مع تركيز أقل تحديدًا على النواحي الطبية السريرية الانتقالية.' },
-      { name: 'ماجستير البحث السريري (Clinical Research)', difference: 'يركز بشكل أساسي على تصميم التجارب السريرية على البشر واللوائح والإحصاء، وليس على العمل المخبري الجزيئي الأساسي.' },
-      { name: 'ماجستير الصحة العامة (MPH)', difference: 'يركز على صحة المجتمع، والوبائيات السكانية، والسياسات الصحية أكثر من الآليات الجزيئية والمخبرية.' },
-      { name: 'الإقامة الطبية (Residency)', difference: 'برنامج تدريب مهني سريري داخل المستشفيات يمنح ترخيص الاختصاص كطبيب، وهو مسار مختلف تمامًا عن الماجستير الأكاديمي.' }
+      {
+        name: 'ماجستير العلوم الطبية الحيوية (Biomedical Sciences)',
+        difference:
+          'يركز بشكل أشمل على العلوم الأساسية والبيولوجيا التطبيقية مع تركيز أقل تحديدًا على النواحي الطبية السريرية الانتقالية.',
+      },
+      {
+        name: 'ماجستير البحث السريري (Clinical Research)',
+        difference:
+          'يركز بشكل أساسي على تصميم التجارب السريرية على البشر واللوائح والإحصاء، وليس على العمل المخبري الجزيئي الأساسي.',
+      },
+      {
+        name: 'ماجستير الصحة العامة (MPH)',
+        difference:
+          'يركز على صحة المجتمع، والوبائيات السكانية، والسياسات الصحية أكثر من الآليات الجزيئية والمخبرية.',
+      },
+      {
+        name: 'الإقامة الطبية (Residency)',
+        difference:
+          'برنامج تدريب مهني سريري داخل المستشفيات يمنح ترخيص الاختصاص كطبيب، وهو مسار مختلف تمامًا عن الماجستير الأكاديمي.',
+      },
     ],
     academicAlertPoints: [
-      { num: '١', title: 'طبيعة الدرجة الأكاديمية', desc: 'ماجستير العلوم الطبية هو مؤهل أكاديمي/بحثي متقدم، وليس تدريبًا سريريًا بديلًا عن الامتياز أو الإقامة الطبية.' },
-      { num: '٢', title: 'الممارسة المهنية والتراخيص', desc: 'لا يمنح هذا البرنامج خريجي التخصصات غير الطبية ترخيصًا لممارسة مهنة الطبيب البشري أو فحص المرضى سريريًا بشكل مستقل، وإنما يؤهلهم للعمل البحثي والأكاديمي والمخبري والتطوير الصحي المتقدم.' }
-    ]
+      {
+        num: '١',
+        title: 'طبيعة الدرجة الأكاديمية',
+        desc: 'ماجستير العلوم الطبية هو مؤهل أكاديمي/بحثي متقدم، وليس تدريبًا سريريًا بديلًا عن الامتياز أو الإقامة الطبية.',
+      },
+      {
+        num: '٢',
+        title: 'الممارسة المهنية والتراخيص',
+        desc: 'لا يمنح هذا البرنامج خريجي التخصصات غير الطبية ترخيصًا لممارسة مهنة الطبيب البشري أو فحص المرضى سريريًا بشكل مستقل، وإنما يؤهلهم للعمل البحثي والأكاديمي والمخبري والتطوير الصحي المتقدم.',
+      },
+    ],
   },
   {
     id: 'doc-0001',
@@ -706,7 +916,8 @@ export const MOCK_MAJORS: Major[] = [
     academicField: 'كلية الطب والعلوم الطبية الأساسية',
     associatedMajor: 'العلوم الطبية والمجالات الطبية الأساسية المرتبطة',
     iconName: 'Microscope',
-    description: 'دكتوراه متعددة التخصصات تنتج معرفة أصلية في العلوم الطبية الأساسية أو الانتقالية أو السريرية البحثية.',
+    description:
+      'دكتوراه متعددة التخصصات تنتج معرفة أصلية في العلوم الطبية الأساسية أو الانتقالية أو السريرية البحثية.',
     averageScholarships: 90,
     futureDemand: 'مرتفع جداً',
     topCountries: ['المملكة المتحدة', 'الولايات المتحدة', 'كندا', 'ألمانيا', 'السويد', 'أستراليا'],
@@ -718,36 +929,39 @@ export const MOCK_MAJORS: Major[] = [
     programTypes: 'بحثية غالبًا، وقد تطرح بصيغة متعددة التخصصات',
     studyModes: 'بعد ماجستير مرتبط غالبًا؛ وقد يتوفر دخول مباشر أو مسار مدمج',
     availabilityNature: 'شائعة كمظلة واسعة، وتحدد الهوية الفعلية بموضوع الأطروحة',
-    natureOfStudy: 'دكتوراه بحثية متقدمة تنتج معرفة أصلية تربط بين الأسس البيولوجية للمرض والتطبيقات الطبية والصحية والسريرية.',
-    aboutMajor: 'تهدف دكتوراه العلوم الطبية إلى تدريب الباحث على إنتاج معرفة أصلية تربط بين الأسس البيولوجية للمرض والتطبيقات الطبية والصحية. وقد تجمع بين علوم المختبر والبيانات السريرية والطب الانتقالي. يختلف المستوى الدكتورالي عن الماجستير في أن الطالب يقود برنامج بحث مستقلًا، ويعالج فجوة حقيقية في الأدلة، ويقدم مساهمة قابلة للفحص والنشر.',
-    aboutMajorNote: 'الدكتوراه بحثية وتنتج معرفة أصلية، ولا تمنح حق ممارسة الطب أو التشخيص أو العلاج السريري المستقل للمرضى دون وجود ترخيص مهني طبي مسبق.',
+    natureOfStudy:
+      'دكتوراه بحثية متقدمة تنتج معرفة أصلية تربط بين الأسس البيولوجية للمرض والتطبيقات الطبية والصحية والسريرية.',
+    aboutMajor:
+      'تهدف دكتوراه العلوم الطبية إلى تدريب الباحث على إنتاج معرفة أصلية تربط بين الأسس البيولوجية للمرض والتطبيقات الطبية والصحية. وقد تجمع بين علوم المختبر والبيانات السريرية والطب الانتقالي. يختلف المستوى الدكتورالي عن الماجستير في أن الطالب يقود برنامج بحث مستقلًا، ويعالج فجوة حقيقية في الأدلة، ويقدم مساهمة قابلة للفحص والنشر.',
+    aboutMajorNote:
+      'الدكتوراه بحثية وتنتج معرفة أصلية، ولا تمنح حق ممارسة الطب أو التشخيص أو العلاج السريري المستقل للمرضى دون وجود ترخيص مهني طبي مسبق.',
     doctorateTypes: [
       'دكتوراه بحثية تقليدية برسالة.',
       'دكتوراه مدمجة بعد البكالوريوس.',
       'دكتوراه تعاونية مع مستشفى أو مركز بحث أو صناعة.',
-      'دكتوراه بالنشر عند توفر النظام.'
+      'دكتوراه بالنشر عند توفر النظام.',
     ],
     targetBackgrounds: [
       'العلوم الطبية',
       'العلوم الطبية الحيوية',
       'البحوث السريرية',
       'الطب الجزيئي',
-      'الصحة العامة أو الإحصاء الحيوي لمسارات محددة'
+      'الصحة العامة أو الإحصاء الحيوي لمسارات محددة',
     ],
     closeBackgrounds: [
       'الطب والصيدلة والتمريض والمختبرات الطبية',
       'الأحياء والكيمياء الحيوية والتقنية الحيوية',
-      'الهندسة الطبية والمعلوماتية الصحية أو الحيوية'
+      'الهندسة الطبية والمعلوماتية الصحية أو الحيوية',
     ],
     directEntryInfo: [
       'بكالوريوس متميز في العلوم الطبية أو الطبية الحيوية ضمن برنامج مدمج.',
       'درجة مهنية صحية أولى مع إعداد بحثي قوي.',
-      'بكالوريوس كمي أو هندسي لمسار طبي حاسوبي مع استدراك.'
+      'بكالوريوس كمي أو هندسي لمسار طبي حاسوبي مع استدراك.',
     ],
     experienceOrLicensing: [
       'لا تتطلب الدكتوراه البحثية ترخيصًا للبحث غير السريري.',
       'البحث الذي يتضمن رعاية أو إجراءات سريرية يحتاج ممارسين مرخصين.',
-      'الدكتوراه المهنية، إن وجدت، قد تتطلب خبرة صحية سابقة.'
+      'الدكتوراه المهنية، إن وجدت، قد تتطلب خبرة صحية سابقة.',
     ],
     programStages: [
       '1. مقررات أو حلقات بحثية متقدمة بحسب نظام البرنامج.',
@@ -759,27 +973,27 @@ export const MOCK_MAJORS: Major[] = [
       '7. تنفيذ البحث وتحليل البيانات والتحقق من جودتها.',
       '8. عرض النتائج ونشرها عند اشتراط ذلك.',
       '9. كتابة الأطروحة ومناقشتها والدفاع عنها.',
-      '10. استكمال الإيداع ومتطلبات التخرج.'
+      '10. استكمال الإيداع ومتطلبات التخرج.',
     ],
     advancedTheory: [
       'التكامل بين العلوم الطبية الأساسية والانتقالية والسريرية.',
       'آليات المرض والمؤشرات الحيوية والتدخلات الصحية.',
       'التقييم النقدي للأدلة الطبية المعقدة.',
-      'تصميم برامج بحث متعددة المراحل والتخصصات.'
+      'تصميم برامج بحث متعددة المراحل والتخصصات.',
     ],
     researchMethodologies: [
       'التجارب المخبرية وما قبل السريرية.',
       'الدراسات الرصدية والتجارب السريرية بحسب المسار.',
       'الإحصاء الحيوي والتحليل السببي.',
       'المراجعات المنهجية والتحليل التلوي.',
-      'البحوث المختلطة والانتقالية.'
+      'البحوث المختلطة والانتقالية.',
     ],
     ethicsAndIntegrity: [
       'موافقات البحث البشري والحيواني.',
       'الموافقة المستنيرة والخصوصية.',
       'التسجيل المسبق وقابلية التكرار.',
       'الإفصاح عن تضارب المصالح.',
-      'النزاهة في التأليف والنشر.'
+      'النزاهة في التأليف والنشر.',
     ],
     subSpecialties: [
       'الطب الانتقالي',
@@ -788,24 +1002,27 @@ export const MOCK_MAJORS: Major[] = [
       'البحوث السريرية',
       'الصحة الدقيقة والبيانات الطبية',
       'العلاجات التجريبية',
-      'علم المرض والالتهاب'
+      'علم المرض والالتهاب',
     ],
-    qualifyingExamInfo: 'قد يقيس الامتحان فهم العلوم الطبية المتقدمة، وتصميم البحث، والإحصاء، وأدبيات مجال الأطروحة. وقد يكون تحريريًا أو شفهيًا أو دفاعًا عن مقترح أولي.',
-    researchProposalInfo: 'يحدد المقترح فجوة طبية واضحة، وسؤالًا قابلًا للاختبار، ومنهجية مناسبة، وخطة عينات أو بيانات، وتحليلًا إحصائيًا، ومخاطر السلامة والأخلاقيات، والموارد المطلوبة.',
-    originalContributionInfo: 'تكون المساهمة الأصلية في صورة اكتشاف آلية، أو تطوير منهج أو مؤشر، أو إنتاج دليل سريري أو انتقالي جديد، أو دمج بيانات يغير فهم مشكلة طبية.',
+    qualifyingExamInfo:
+      'قد يقيس الامتحان فهم العلوم الطبية المتقدمة، وتصميم البحث، والإحصاء، وأدبيات مجال الأطروحة. وقد يكون تحريريًا أو شفهيًا أو دفاعًا عن مقترح أولي.',
+    researchProposalInfo:
+      'يحدد المقترح فجوة طبية واضحة، وسؤالًا قابلًا للاختبار، ومنهجية مناسبة، وخطة عينات أو بيانات، وتحليلًا إحصائيًا، ومخاطر السلامة والأخلاقيات، والموارد المطلوبة.',
+    originalContributionInfo:
+      'تكون المساهمة الأصلية في صورة اكتشاف آلية، أو تطوير منهج أو مؤشر، أو إنتاج دليل سريري أو انتقالي جديد، أو دمج بيانات يغير فهم مشكلة طبية.',
     supervisionEnvironment: [
       'مشرف رئيس ذو خبرة في مجال السؤال البحثي.',
       'لجنة تضم خبرات مخبرية أو سريرية أو إحصائية.',
       'مختبر أو منصة بيانات قادرة على تنفيذ الخطة.',
       'وصول معتمد إلى العينات أو السجلات.',
-      'تعاون مع ممارسين مرخصين عند وجود مكونات سريرية.'
+      'تعاون مع ممارسين مرخصين عند وجود مكونات سريرية.',
     ],
     researchPublishingTeaching: [
       'حلقات بحث وتحديثات دورية للجنة.',
       'عرض النتائج في مؤتمر أو ندوة.',
       'إعداد أوراق علمية وفق سياسة المؤسسة.',
       'تدريس أو مساعدة تعليمية في بعض البرامج.',
-      'تدريب في الأخلاقيات والسلامة وإدارة البيانات.'
+      'تدريب في الأخلاقيات والسلامة وإدارة البيانات.',
     ],
     acquiredSkills: [
       'قيادة برنامج بحث طبي مستقل',
@@ -814,7 +1031,7 @@ export const MOCK_MAJORS: Major[] = [
       'إدارة فرق وموارد بحثية',
       'تحليل بيانات متعددة المصادر',
       'كتابة أبحاث وطلبات تمويل',
-      'الدفاع العلمي عن المنهجية'
+      'الدفاع العلمي عن المنهجية',
     ],
     workFields: [
       'الجامعات وكليات الطب',
@@ -822,31 +1039,66 @@ export const MOCK_MAJORS: Major[] = [
       'المستشفيات الأكاديمية',
       'الصناعات الدوائية والتقنية الحيوية',
       'الهيئات الصحية والتنظيمية',
-      'الاستشارات والابتكار الطبي'
+      'الاستشارات والابتكار الطبي',
     ],
     relatedJobs: [
-      { job: 'باحث أو عالم طبي', matchRate: 'مناسبة جدًا', entry: 'مناسبة جدًا', notes: 'يعتمد التخصص الدقيق على موضوع الأطروحة.' },
-      { job: 'عضو هيئة أكاديمية', matchRate: 'مناسبة', entry: 'مناسبة', notes: 'التعيين تنافسي ويتطلب سجلًا بحثيًا.' },
-      { job: 'قائد بحث وتطوير طبي', matchRate: 'مناسبة مع خبرة', entry: 'مناسبة مع خبرة', notes: 'يفضل الجمع بين البحث والإدارة.' },
-      { job: 'ممارس طبي مستقل', matchRate: 'غير كافية وحدها', entry: 'غير كافية وحدها', notes: 'يتطلب درجة مهنية وترخيصًا منفصلًا.' }
+      {
+        job: 'باحث أو عالم طبي',
+        matchRate: 'مناسبة جدًا',
+        entry: 'مناسبة جدًا',
+        notes: 'يعتمد التخصص الدقيق على موضوع الأطروحة.',
+      },
+      {
+        job: 'عضو هيئة أكاديمية',
+        matchRate: 'مناسبة',
+        entry: 'مناسبة',
+        notes: 'التعيين تنافسي ويتطلب سجلًا بحثيًا.',
+      },
+      {
+        job: 'قائد بحث وتطوير طبي',
+        matchRate: 'مناسبة مع خبرة',
+        entry: 'مناسبة مع خبرة',
+        notes: 'يفضل الجمع بين البحث والإدارة.',
+      },
+      {
+        job: 'ممارس طبي مستقل',
+        matchRate: 'غير كافية وحدها',
+        entry: 'غير كافية وحدها',
+        notes: 'يتطلب درجة مهنية وترخيصًا منفصلًا.',
+      },
     ],
-    postDoctoralOpportunitiesIntro: 'بعد إتمام الدكتوراه في العلوم الطبية، تتاح للباحث المسارات والزمالات المتقدمة التالية:',
+    postDoctoralOpportunitiesIntro:
+      'بعد إتمام الدكتوراه في العلوم الطبية، تتاح للباحث المسارات والزمالات المتقدمة التالية:',
     postDoctoralOpportunities: [
       'زمالة ما بعد الدكتوراه في العلوم الطبية.',
       'زمالة بحثية سريرية أو انتقالية.',
       'مسار أكاديمي في العلوم الطبية.',
       'البحث والتطوير الدوائي أو الحيوي.',
-      'إدارة برامج البحث والسياسات العلمية.'
+      'إدارة برامج البحث والسياسات العلمية.',
     ],
     similarMajors: [
-      { name: 'دكتوراه العلوم الطبية الحيوية', difference: 'أكثر تركيزًا عادةً على الآليات الخلوية والجزيئية.' },
-      { name: 'دكتوراه البحوث السريرية', difference: 'تركز على الدراسات التي تشمل المرضى والنتائج السريرية.' },
-      { name: 'دكتوراه الطب الجزيئي', difference: 'أدق في الآليات الجزيئية وتطبيقاتها.' }
+      {
+        name: 'دكتوراه العلوم الطبية الحيوية',
+        difference: 'أكثر تركيزًا عادةً على الآليات الخلوية والجزيئية.',
+      },
+      {
+        name: 'دكتوراه البحوث السريرية',
+        difference: 'تركز على الدراسات التي تشمل المرضى والنتائج السريرية.',
+      },
+      { name: 'دكتوراه الطب الجزيئي', difference: 'أدق في الآليات الجزيئية وتطبيقاتها.' },
     ],
     academicAlertPoints: [
-      { num: '١', title: 'طبيعة الدرجة البحثية', desc: 'الدكتوراه بحثية ولا تمنح حق ممارسة الطب أو التشخيص أو العلاج السريري المستقل للمرضى.' },
-      { num: '٢', title: 'تقييم البرنامج والأطروحة', desc: 'يجب تقييم دقة اسم البرنامج ومجال الأطروحة وجودة الإشراف والموارد المخبرية والسريرية المتاحة.' }
-    ]
+      {
+        num: '١',
+        title: 'طبيعة الدرجة البحثية',
+        desc: 'الدكتوراه بحثية ولا تمنح حق ممارسة الطب أو التشخيص أو العلاج السريري المستقل للمرضى.',
+      },
+      {
+        num: '٢',
+        title: 'تقييم البرنامج والأطروحة',
+        desc: 'يجب تقييم دقة اسم البرنامج ومجال الأطروحة وجودة الإشراف والموارد المخبرية والسريرية المتاحة.',
+      },
+    ],
   },
   {
     id: 'fel-0001',
@@ -857,46 +1109,56 @@ export const MOCK_MAJORS: Major[] = [
     academicField: 'القلب والأوعية',
     professionalOrResearchField: 'القلب والأوعية',
     fellowshipType: 'زمالة تدريبية سريرية — Clinical Training Fellowship',
-    associatedMajor: 'الطب الباطني، طب القلب، وظائف الأعضاء القلبية، التصوير القلبي، والعناية القلبية',
+    associatedMajor:
+      'الطب الباطني، طب القلب، وظائف الأعضاء القلبية، التصوير القلبي، والعناية القلبية',
     iconName: 'Activity',
     description: 'تدريب سريري متقدم في تشخيص وعلاج ومتابعة أمراض القلب والأوعية لدى البالغين.',
     averageScholarships: 75,
     futureDemand: 'مرتفع جداً',
-    topCountries: ['المملكة المتحدة', 'الولايات المتحدة', 'كندا', 'ألمانيا', 'السعودية', 'أستراليا'],
+    topCountries: [
+      'المملكة المتحدة',
+      'الولايات المتحدة',
+      'كندا',
+      'ألمانيا',
+      'السعودية',
+      'أستراليا',
+    ],
     popularCareers: ['طبيب استشاري قلب', 'طبيب اختصاصي قلب', 'أخصائي عناية قلبية فائقة'],
     degreeLevels: ['زمالة أبحاث'],
     degreeLevelName: 'زمالة تدريبية سريرية — Clinical Training Fellowship',
     duration: 'غالبًا نحو 3 سنوات بعد التدريب الأساسي، مع اختلاف واضح حسب النظام',
     natureOfStudy: 'سريري عملي، دورانات، عيادات، مناوبات، مناقشات حالات، وبحث أو تحسين جودة',
     licensingRequirement: 'مطلوب للممارسة السريرية',
-    aboutMajor: 'تؤسس الزمالة كفاءة واسعة في أمراض القلب لدى البالغين قبل الانتقال إلى تخصصات أدق مثل التداخلات أو اضطرابات النظم أو قصور القلب. وتشمل تقييم الأعراض القلبية، وفهم الفحوص، وإدارة الحالات المزمنة والحادة، والتنسيق مع الطوارئ والعناية والجراحة. لا تمنح الزمالة وحدها صلاحية عالمية؛ إذ ترتبط الصلاحيات بالترخيص والاعتماد والامتيازات السريرية المحلية.',
+    aboutMajor:
+      'تؤسس الزمالة كفاءة واسعة في أمراض القلب لدى البالغين قبل الانتقال إلى تخصصات أدق مثل التداخلات أو اضطرابات النظم أو قصور القلب. وتشمل تقييم الأعراض القلبية، وفهم الفحوص، وإدارة الحالات المزمنة والحادة، والتنسيق مع الطوارئ والعناية والجراحة. لا تمنح الزمالة وحدها صلاحية عالمية؛ إذ ترتبط الصلاحيات بالترخيص والاعتماد والامتيازات السريرية المحلية.',
     fellowshipTypeDetails: [
       'النوع الأساسي: زمالة تدريبية سريرية.',
       'تركز على تدريب تخصصي أو تخصص دقيق بعد إكمال تدريب أساسي مناسب.',
       'قد تتضمن مكونًا بحثيًا أو مشروع تحسين جودة.',
       'لا تعد درجة أكاديمية جديدة.',
-      'لا تمنح تلقائيًا لقبًا أو اعتمادًا أو نطاق ممارسة خارج الجهة المنظمة.'
+      'لا تمنح تلقائيًا لقبًا أو اعتمادًا أو نطاق ممارسة خارج الجهة المنظمة.',
     ],
     targetAudience: [
       'أطباء أنهوا إقامة أو تدريبًا أساسيًا في الطب الباطني أو مسارًا معادلًا.',
       'ممارسون يريدون بناء اختصاص شامل في طب القلب للبالغين.',
       'أطباء لديهم ترخيص مهني ساري وأهلية للعمل السريري تحت الإشراف.',
-      'ليست موجهة للمبتدئين قبل إكمال التدريب الأساسي.'
+      'ليست موجهة للمبتدئين قبل إكمال التدريب الأساسي.',
     ],
     previousQualifications: [
       'درجة طب مهنية معترف بها.',
       'إكمال إقامة أو برنامج اختصاص أساسي مناسب.',
       'ترخيص طبي ساري أو أهلية ترخيص وفق الجهة.',
       'كفاءة في الإنعاش وتقييم المريض الحاد وفق متطلبات البرنامج.',
-      'معرفة أساسية بتخطيط القلب والأدوية القلبية والطب الباطني.'
+      'معرفة أساسية بتخطيط القلب والأدوية القلبية والطب الباطني.',
     ],
-    previousQualificationsNote: 'تختلف شروط القبول الدقيقة حسب الدولة والهيئة والبرنامج، ولا تحفظ شروط مؤسسة بعينها داخل Phase 10.',
+    previousQualificationsNote:
+      'تختلف شروط القبول الدقيقة حسب الدولة والهيئة والبرنامج، ولا تحفظ شروط مؤسسة بعينها داخل Phase 10.',
     durationAndPattern: [
       'دوام كامل غالبًا.',
       'دورانات داخلية وعيادات خارجية ووحدات عناية قلبية.',
       'مناوبات واستشارات قلبية بحسب البرنامج.',
       'مكون بحث أو تحسين جودة وتعليم سريري.',
-      'تختلف المدة والحد الأدنى للحالات بحسب الهيئة المنظمة.'
+      'تختلف المدة والحد الأدنى للحالات بحسب الهيئة المنظمة.',
     ],
     rotationsAndClinical: [
       'عيادات أمراض القلب العامة والمتابعة.',
@@ -904,20 +1166,20 @@ export const MOCK_MAJORS: Major[] = [
       'استشارات القلب للمرضى المنومين.',
       'قصور القلب ومرض الشرايين التاجية والصمامات.',
       'ارتفاع الضغط واضطرابات الدهون والوقاية.',
-      'التعرض المنظم للتصوير والقسطرة واضطرابات النظم.'
+      'التعرض المنظم للتصوير والقسطرة واضطرابات النظم.',
     ],
     supervisedProcedures: [
       'قراءة تخطيط القلب والمراقبة القلبية.',
       'المشاركة في اختبارات الجهد والتصوير تحت الإشراف.',
       'التعرض للقسطرة التشخيصية وفق الصلاحيات.',
       'إجراءات سريرية أساسية مرتبطة بالعناية القلبية ضمن البرنامج.',
-      'تفسير الفحوص مع إشراف واعتماد تدريجي.'
+      'تفسير الفحوص مع إشراف واعتماد تدريجي.',
     ],
     researchAndQuality: [
       'مشروع بحث سريري أو تحسين جودة.',
       'مراجعة أدلة وإرشادات وتقديم حالات.',
       'تحليل مؤشرات سلامة ونتائج الرعاية.',
-      'المشاركة في تعليم المقيمين والطلاب.'
+      'المشاركة في تعليم المقيمين والطلاب.',
     ],
     targetCompetencies: [
       'التقييم المتكامل للمريض القلبي.',
@@ -926,7 +1188,7 @@ export const MOCK_MAJORS: Major[] = [
       'التعرف على الحالات الطارئة والتصعيد المناسب.',
       'اختيار العلاج المبني على الدليل.',
       'التواصل مع المريض والفريق متعدد التخصصات.',
-      'إدارة المخاطر والسلامة الدوائية.'
+      'إدارة المخاطر والسلامة الدوائية.',
     ],
     subSpecialties: [
       'مرض الشرايين التاجية',
@@ -935,14 +1197,14 @@ export const MOCK_MAJORS: Major[] = [
       'اضطرابات النظم',
       'الوقاية القلبية',
       'التصوير القلبي',
-      'القلب عند كبار السن'
+      'القلب عند كبار السن',
     ],
     supervisionAndEnvironment: [
       'مشرفون معتمدون في طب القلب.',
       'حجم وتنوع كافيان من الحالات.',
       'وحدة عناية قلبية وعيادات وخدمات تشخيصية.',
       'تعاون مع الطوارئ والجراحة والأشعة والصيدلة.',
-      'نظام تقييم ودعم ومراجعة سلامة واضح.'
+      'نظام تقييم ودعم ومراجعة سلامة واضح.',
     ],
     assessmentAndCompletionRequirements: [
       'تقييم مستمر للمعرفة والقرار السريري.',
@@ -950,42 +1212,73 @@ export const MOCK_MAJORS: Major[] = [
       'سجل حالات وخبرات وإجراءات.',
       'اختبارات تحريرية أو شفهية بحسب النظام.',
       'مشروع بحث أو تحسين جودة.',
-      'تقييم نهائي للكفاءة المهنية.'
+      'تقييم نهائي للكفاءة المهنية.',
     ],
     resultingCertificate: [
       'شهادة إكمال زمالة طب القلب للبالغين.',
       'خبرة تخصصية تؤهل للتقدم إلى اعتماد أو بورد حيثما ينطبق.',
       'قاعدة للتقدم إلى زمالات قلب دقيقة.',
-      'لا تعد درجة أكاديمية جديدة.'
+      'لا تعد درجة أكاديمية جديدة.',
     ],
-    practiceScopeAndLicensing: 'تدعم الزمالة ممارسة طب القلب للبالغين ضمن الترخيص والاعتماد والامتيازات الممنوحة. لا تسمح تلقائيًا بإجراء تدخلات متقدمة أو إجراءات كهربائية أو جراحية دون تدريب دقيق واعتماد منفصل.',
+    practiceScopeAndLicensing:
+      'تدعم الزمالة ممارسة طب القلب للبالغين ضمن الترخيص والاعتماد والامتيازات الممنوحة. لا تسمح تلقائيًا بإجراء تدخلات متقدمة أو إجراءات كهربائية أو جراحية دون تدريب دقيق واعتماد منفصل.',
     workFields: [
       'أقسام وعيادات القلب',
       'وحدات العناية القلبية',
       'المستشفيات العامة والتخصصية',
       'التعليم والتدريب السريري',
       'البحث السريري في القلب',
-      'الخدمات الاستشارية ضمن الترخيص'
+      'الخدمات الاستشارية ضمن الترخيص',
     ],
     relationToResidencyBoardPhD: [
-      { pathway: 'الإقامة', relation: 'تدريب تخصصي أساسي يسبق الزمالة، وغالبًا يكون في الطب الباطني أو مسار معادل.' },
-      { pathway: 'البورد أو شهادة الاختصاص', relation: 'قد يكون شرط دخول أو اعتمادًا لاحقًا، ويختلف حسب النظام.' },
-      { pathway: 'الماجستير', relation: 'درجة أكاديمية لا تستبدل التدريب السريري السابق أو الترخيص.' },
-      { pathway: 'الدكتوراه', relation: 'درجة بحثية أو مهنية ولا تمنح وحدها صلاحية ممارسة التخصص السريري.' },
-      { pathway: 'ما بعد الدكتوراه', relation: 'مسار بحثي مختلف عن الزمالة السريرية.' }
+      {
+        pathway: 'الإقامة',
+        relation: 'تدريب تخصصي أساسي يسبق الزمالة، وغالبًا يكون في الطب الباطني أو مسار معادل.',
+      },
+      {
+        pathway: 'البورد أو شهادة الاختصاص',
+        relation: 'قد يكون شرط دخول أو اعتمادًا لاحقًا، ويختلف حسب النظام.',
+      },
+      {
+        pathway: 'الماجستير',
+        relation: 'درجة أكاديمية لا تستبدل التدريب السريري السابق أو الترخيص.',
+      },
+      {
+        pathway: 'الدكتوراه',
+        relation: 'درجة بحثية أو مهنية ولا تمنح وحدها صلاحية ممارسة التخصص السريري.',
+      },
+      { pathway: 'ما بعد الدكتوراه', relation: 'مسار بحثي مختلف عن الزمالة السريرية.' },
     ],
     similarFellowships: [
-      { name: 'زمالة أمراض القلب التداخلية', difference: 'تركز على القسطرة والعلاج التداخلي بعد تدريب القلب العام.' },
-      { name: 'زمالة الفيزيولوجيا الكهربائية القلبية', difference: 'تركز على اضطرابات النظم والأجهزة والإجراءات الكهربائية.' },
-      { name: 'زمالة قصور القلب المتقدم', difference: 'تركز على الحالات المتقدمة والدعم الميكانيكي والزراعة.' },
-      { name: 'زمالة طب القلب الوقائي', difference: 'تركز على خفض عوامل الخطورة والوقاية.' }
+      {
+        name: 'زمالة أمراض القلب التداخلية',
+        difference: 'تركز على القسطرة والعلاج التداخلي بعد تدريب القلب العام.',
+      },
+      {
+        name: 'زمالة الفيزيولوجيا الكهربائية القلبية',
+        difference: 'تركز على اضطرابات النظم والأجهزة والإجراءات الكهربائية.',
+      },
+      {
+        name: 'زمالة قصور القلب المتقدم',
+        difference: 'تركز على الحالات المتقدمة والدعم الميكانيكي والزراعة.',
+      },
+      { name: 'زمالة طب القلب الوقائي', difference: 'تركز على خفض عوامل الخطورة والوقاية.' },
     ],
-    professionalRegulatoryAlert: 'الزمالة لا تمنح حق ممارسة طب القلب خارج الترخيص والاعتماد المحلي، ولا تسمح بإجراءات تخصصية دقيقة دون تدريب وامتيازات منفصلة. القرارات العاجلة والإجرائية يجب أن تتم داخل بيئة معتمدة وتحت حوكمة سريرية.',
+    professionalRegulatoryAlert:
+      'الزمالة لا تمنح حق ممارسة طب القلب خارج الترخيص والاعتماد المحلي، ولا تسمح بإجراءات تخصصية دقيقة دون تدريب وامتيازات منفصلة. القرارات العاجلة والإجرائية يجب أن تتم داخل بيئة معتمدة وتحت حوكمة سريرية.',
     academicAlertPoints: [
-      { num: '١', title: 'الترخيص والممارسة السريرية', desc: 'الزمالة لا تمنح حق ممارسة طب القلب خارج الترخيص والاعتماد المحلي، ولا تسمح بإجراءات تخصصية دقيقة دون تدريب وامتيازات منفصلة.' },
-      { num: '٢', title: 'الحوكمة السريرية', desc: 'القرارات العاجلة والإجرائية يجب أن تتم داخل بيئة معتمدة وتحت حوكمة سريرية وإشراف طبي معتمد.' }
-    ]
-  }
+      {
+        num: '١',
+        title: 'الترخيص والممارسة السريرية',
+        desc: 'الزمالة لا تمنح حق ممارسة طب القلب خارج الترخيص والاعتماد المحلي، ولا تسمح بإجراءات تخصصية دقيقة دون تدريب وامتيازات منفصلة.',
+      },
+      {
+        num: '٢',
+        title: 'الحوكمة السريرية',
+        desc: 'القرارات العاجلة والإجرائية يجب أن تتم داخل بيئة معتمدة وتحت حوكمة سريرية وإشراف طبي معتمد.',
+      },
+    ],
+  },
 ];
 
 export const INITIAL_MILESTONES: ApplicationMilestone[] = [
@@ -997,14 +1290,15 @@ export const INITIAL_MILESTONES: ApplicationMilestone[] = [
     deadline: '2026-10-30',
     stage: 'كتابة خطاب الدافع',
     progress: 50,
-    notes: 'تم إنهاء المسودة الأولى لخطاب الدافع باستخدام أداة الذكاء الاصطناعي في منارتك. متبقي مراجعة رسائل التوصية.',
+    notes:
+      'تم إنهاء المسودة الأولى لخطاب الدافع باستخدام أداة الذكاء الاصطناعي في منارتك. متبقي مراجعة رسائل التوصية.',
     checklist: [
       { id: 'c-1', task: 'ترجمة وتصديق كشف العلامات وشهادة البكالوريوس', completed: true },
       { id: 'c-2', task: 'إعداد السيرة الذاتية بتنسيق Europass', completed: true },
       { id: 'c-3', task: 'كتابة خطاب الدافع المخصص للجامعات الأوروبية', completed: false },
       { id: 'c-4', task: 'الحصول على خطابي توصية من أساتذة الجامعة', completed: false },
-      { id: 'c-5', task: 'تقديم الطلب الإلكتروني على البوابة الرسمية', completed: false }
-    ]
+      { id: 'c-5', task: 'تقديم الطلب الإلكتروني على البوابة الرسمية', completed: false },
+    ],
   },
   {
     id: 'track-chevening',
@@ -1019,10 +1313,14 @@ export const INITIAL_MILESTONES: ApplicationMilestone[] = [
       { id: 'ch-1', task: 'اختيار 3 برامج ماجستير في 3 جامعات بريطانية مختلفة', completed: true },
       { id: 'ch-2', task: 'كتابة مقال القيادة والتأثير (Leadership Essay)', completed: false },
       { id: 'ch-3', task: 'كتابة مقال بناء شبكة العلاقات (Networking Essay)', completed: false },
-      { id: 'ch-4', task: 'كتابة مقال دراسة الماجستير في بريطانيا (Studying in the UK)', completed: false },
-      { id: 'ch-5', task: 'كتابة مقال الخطة المهنية المستقبلية (Career Plan)', completed: false }
-    ]
-  }
+      {
+        id: 'ch-4',
+        task: 'كتابة مقال دراسة الماجستير في بريطانيا (Studying in the UK)',
+        completed: false,
+      },
+      { id: 'ch-5', task: 'كتابة مقال الخطة المهنية المستقبلية (Career Plan)', completed: false },
+    ],
+  },
 ];
 
 export const INITIAL_NOTIFICATIONS: PushNotificationItem[] = [
@@ -1034,7 +1332,7 @@ export const INITIAL_NOTIFICATIONS: PushNotificationItem[] = [
     type: 'urgent',
     read: false,
     actionType: 'scholarship',
-    targetId: 'chevening-uk'
+    targetId: 'chevening-uk',
   },
   {
     id: 'notif-2',
@@ -1044,7 +1342,7 @@ export const INITIAL_NOTIFICATIONS: PushNotificationItem[] = [
     type: 'opportunity',
     read: false,
     actionType: 'scholarship',
-    targetId: 'csc-china'
+    targetId: 'csc-china',
   },
   {
     id: 'notif-3',
@@ -1053,7 +1351,7 @@ export const INITIAL_NOTIFICATIONS: PushNotificationItem[] = [
     timestamp: 'منذ 3 ساعات',
     type: 'system',
     read: true,
-    actionType: 'ai-tools'
+    actionType: 'ai-tools',
   },
   {
     id: 'notif-4',
@@ -1063,8 +1361,8 @@ export const INITIAL_NOTIFICATIONS: PushNotificationItem[] = [
     type: 'deadline',
     read: true,
     actionType: 'scholarship',
-    targetId: 'daad-germany'
-  }
+    targetId: 'daad-germany',
+  },
 ];
 
 export const MOCK_EXAMS: Exam[] = [
@@ -1073,7 +1371,8 @@ export const MOCK_EXAMS: Exam[] = [
     name: 'اختبار الآيلتس',
     nameEn: 'IELTS',
     category: 'لغة إنجليزية',
-    description: 'نظام اختبار اللغة الإنجليزية الدولي المعتمد عالمياً للدراسة والهجرة وتأشيرات العمل.',
+    description:
+      'نظام اختبار اللغة الإنجليزية الدولي المعتمد عالمياً للدراسة والهجرة وتأشيرات العمل.',
     tags: ['بريطانيا', 'أستراليا', 'كندا', 'أكاديمي'],
   },
   {
@@ -1081,7 +1380,8 @@ export const MOCK_EXAMS: Exam[] = [
     name: 'اختبار التوفل',
     nameEn: 'TOEFL iBT',
     category: 'لغة إنجليزية',
-    description: 'اختبار تقييم مستوى اللغة الإنجليزية للأغراض الأكاديمية، معتمد بشدة في أمريكا الشمالية.',
+    description:
+      'اختبار تقييم مستوى اللغة الإنجليزية للأغراض الأكاديمية، معتمد بشدة في أمريكا الشمالية.',
     tags: ['أمريكا', 'كندا', 'أكاديمي'],
   },
   {
@@ -1089,7 +1389,8 @@ export const MOCK_EXAMS: Exam[] = [
     name: 'اختبار السات',
     nameEn: 'SAT',
     category: 'قبول جامعي',
-    description: 'اختبار قبول موحد للجامعات الأمريكية يقيس مهارات الرياضيات والقراءة والكتابة للبكالوريوس.',
+    description:
+      'اختبار قبول موحد للجامعات الأمريكية يقيس مهارات الرياضيات والقراءة والكتابة للبكالوريوس.',
     tags: ['أمريكا', 'بكالوريوس'],
   },
   {
@@ -1097,9 +1398,10 @@ export const MOCK_EXAMS: Exam[] = [
     name: 'اختبار جي آر إي',
     nameEn: 'GRE',
     category: 'دراسات عليا',
-    description: 'متطلب أساسي للقبول في برامج الماجستير والدكتوراه في العديد من الجامعات وخاصة الأمريكية.',
+    description:
+      'متطلب أساسي للقبول في برامج الماجستير والدكتوراه في العديد من الجامعات وخاصة الأمريكية.',
     tags: ['ماجستير', 'دكتوراه', 'أمريكا'],
-  }
+  },
 ];
 
 export const MOCK_COUNTRIES: CountryDestination[] = [
@@ -1115,8 +1417,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'عالية',
     scholarshipsCount: 52,
     universitiesCount: 280,
-    description: 'وجهة عملاقة ورائدة في التكنولوجيا والذكاء الاصطناعي والطب، تقدم منحاً حكومية سخية تشمل الدراسة والسكن والراتب الشهري.',
-    imageUrl: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80',
+    description:
+      'وجهة عملاقة ورائدة في التكنولوجيا والذكاء الاصطناعي والطب، تقدم منحاً حكومية سخية تشمل الدراسة والسكن والراتب الشهري.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80',
     popularCities: ['بكين', 'شنغهاي', 'هانغتشو', 'قوانغتشو'],
     averageLivingCostUsd: '350 - 600 $ / شهر',
     languageOfStudy: ['الإنجليزية', 'الصينية (مع سنة تحضيرية مجانية)'],
@@ -1134,8 +1438,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'عالية',
     scholarshipsCount: 38,
     universitiesCount: 200,
-    description: 'جسر يربط بين الشرق والغرب، وتتميز بالمنحة التركية الشاملة Türkiye Bursları مع تكاليف معيشية مناسبة وثقافة قريبة للطلاب العرب.',
-    imageUrl: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80',
+    description:
+      'جسر يربط بين الشرق والغرب، وتتميز بالمنحة التركية الشاملة Türkiye Bursları مع تكاليف معيشية مناسبة وثقافة قريبة للطلاب العرب.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80',
     popularCities: ['إسطنبول', 'أنقرة', 'إزمير', 'بورصة'],
     averageLivingCostUsd: '400 - 750 $ / شهر',
     languageOfStudy: ['التركية', 'الإنجليزية'],
@@ -1153,8 +1459,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'عالية',
     scholarshipsCount: 29,
     universitiesCount: 110,
-    description: 'مركز تعليمي متطور وبيئة إسلامية متعددة الثقافات، مع برامج توأمة بريطانية وأسترالية وتدريس باللغة الإنجليزية بالكامل.',
-    imageUrl: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80',
+    description:
+      'مركز تعليمي متطور وبيئة إسلامية متعددة الثقافات، مع برامج توأمة بريطانية وأسترالية وتدريس باللغة الإنجليزية بالكامل.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80',
     popularCities: ['كوالالمبور', 'بينانغ', 'جوهور بهرو'],
     averageLivingCostUsd: '350 - 550 $ / شهر',
     languageOfStudy: ['الإنجليزية'],
@@ -1172,8 +1480,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'ممتازة',
     scholarshipsCount: 45,
     universitiesCount: 380,
-    description: 'قلب الهندسة والصناعة الأوروبية، وتتميز بمجانية التعليم في الجامعات الحكومية لمعظم التخصصات مع منح DAAD المرموقة.',
-    imageUrl: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80',
+    description:
+      'قلب الهندسة والصناعة الأوروبية، وتتميز بمجانية التعليم في الجامعات الحكومية لمعظم التخصصات مع منح DAAD المرموقة.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80',
     popularCities: ['برلين', 'ميونخ', 'فرانكفورت', 'آخن'],
     averageLivingCostUsd: '850 - 1100 $ / شهر (حساب مغلق)',
     languageOfStudy: ['الألمانية', 'الإنجليزية'],
@@ -1191,8 +1501,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'ممتازة',
     scholarshipsCount: 42,
     universitiesCount: 160,
-    description: 'أعرق الصروح الأكاديمية العالمية مثل أكسفورد وكامبريدج، مع منح حكومية مرموقة مثل Chevening وبرامج دراسية مكثفة وسريعة.',
-    imageUrl: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80',
+    description:
+      'أعرق الصروح الأكاديمية العالمية مثل أكسفورد وكامبريدج، مع منح حكومية مرموقة مثل Chevening وبرامج دراسية مكثفة وسريعة.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80',
     popularCities: ['لندن', 'مانشستر', 'إدنبرة', 'أكسفورد'],
     averageLivingCostUsd: '1100 - 1600 $ / شهر',
     languageOfStudy: ['الإنجليزية'],
@@ -1210,8 +1522,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'عالية',
     scholarshipsCount: 35,
     universitiesCount: 45,
-    description: 'نهضة تعليمية وبحثية كبرى عبر منصة "ادرس في السعودية" ومنح جامعات الملك سعود والملك فهد والملك عبد الله (KAUST) الممولة بالكامل.',
-    imageUrl: 'https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=800&q=80',
+    description:
+      'نهضة تعليمية وبحثية كبرى عبر منصة "ادرس في السعودية" ومنح جامعات الملك سعود والملك فهد والملك عبد الله (KAUST) الممولة بالكامل.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=800&q=80',
     popularCities: ['الرياض', 'جدة', 'الظهران', 'المدينة المنورة'],
     averageLivingCostUsd: '400 - 800 $ / شهر',
     languageOfStudy: ['العربية', 'الإنجليزية'],
@@ -1229,8 +1543,10 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'ممتازة',
     scholarshipsCount: 27,
     universitiesCount: 150,
-    description: 'بيئة بحثية وفنية فريدة في قلب أوروبا مع دعم حكومي للسكن (CAF) ومنح إيفل للتميز Eiffel Excellence.',
-    imageUrl: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80',
+    description:
+      'بيئة بحثية وفنية فريدة في قلب أوروبا مع دعم حكومي للسكن (CAF) ومنح إيفل للتميز Eiffel Excellence.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80',
     popularCities: ['باريس', 'ليون', 'مرسيليا', 'تولوز'],
     averageLivingCostUsd: '700 - 1100 $ / شهر',
     languageOfStudy: ['الفرنسية', 'الإنجليزية'],
@@ -1248,11 +1564,13 @@ export const MOCK_COUNTRIES: CountryDestination[] = [
     studentSuitability: 'عالية',
     scholarshipsCount: 22,
     universitiesCount: 180,
-    description: 'كوكب الابتكار والتكنولوجيا مع منح MEXT الحكومية الشهيرة التي تغطي الرسوم وتذاكر الطيران وراتباً شهرياً سخياً.',
-    imageUrl: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80',
+    description:
+      'كوكب الابتكار والتكنولوجيا مع منح MEXT الحكومية الشهيرة التي تغطي الرسوم وتذاكر الطيران وراتباً شهرياً سخياً.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80',
     popularCities: ['طوكيو', 'كيوتو', 'أوساكا', 'ناغويا'],
     averageLivingCostUsd: '750 - 1100 $ / شهر',
     languageOfStudy: ['اليابانية', 'الإنجليزية'],
     visaEase: 'منظمة ومضمونة للمقبولين في المنح',
-  }
+  },
 ];

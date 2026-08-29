@@ -5,10 +5,7 @@ interface ManaratakLogoProps {
   size?: number;
 }
 
-export const ManaratakLogo: React.FC<ManaratakLogoProps> = ({
-  className = '',
-  size = 48,
-}) => {
+export const ManaratakLogo: React.FC<ManaratakLogoProps> = ({ className = '', size = 48 }) => {
   return (
     <svg
       width={size}
@@ -29,11 +26,7 @@ export const ManaratakLogo: React.FC<ManaratakLogoProps> = ({
       <circle cx="250" cy="250" r="222" stroke="#D9A93A" strokeWidth="3" strokeOpacity="0.9" />
 
       {/* Golden Light Beam from Lighthouse Lantern */}
-      <path
-        d="M170 148 L460 115 L460 178 Z"
-        fill="url(#goldLightBeam)"
-        opacity="0.9"
-      />
+      <path d="M170 148 L460 115 L460 178 Z" fill="url(#goldLightBeam)" opacity="0.9" />
 
       {/* Lantern Glowing Core */}
       <circle cx="145" cy="148" r="22" fill="#FFE57F" opacity="0.6" filter="blur(6px)" />
@@ -42,7 +35,7 @@ export const ManaratakLogo: React.FC<ManaratakLogoProps> = ({
       <path d="M145 92 L148 112 L142 112 Z" fill="#FFFFFF" />
       <circle cx="145" cy="90" r="4.5" fill="#FFFFFF" />
       <path d="M125 125 C125 112, 165 112, 165 125 Z" fill="#FFFFFF" />
-      
+
       {/* Lantern Room Cage */}
       <rect x="127" y="125" width="36" height="28" fill="#FFF8E1" rx="2" />
       <rect x="131" y="127" width="28" height="24" fill="#FFD54F" />
@@ -55,44 +48,26 @@ export const ManaratakLogo: React.FC<ManaratakLogoProps> = ({
 
       {/* Letter 'M' Shape (White Serif Pillars) */}
       {/* Left Pillar */}
-      <path
-        d="M60 188 L105 188 L105 348 L60 348 Z"
-        fill="#FFFFFF"
-      />
+      <path d="M60 188 L105 188 L105 348 L60 348 Z" fill="#FFFFFF" />
       {/* Left Serif Top/Bottom */}
       <path d="M50 188 L115 188 L115 194 L50 194 Z" fill="#FFFFFF" />
       <path d="M50 342 L115 342 L115 348 L50 348 Z" fill="#FFFFFF" />
 
       {/* Left Diagonal connecting to Lighthouse */}
-      <path
-        d="M105 200 L135 270 L115 270 L90 215 Z"
-        fill="#FFFFFF"
-      />
+      <path d="M105 200 L135 270 L115 270 L90 215 Z" fill="#FFFFFF" />
 
       {/* Center Lighthouse Tower (forms center of M) */}
       {/* Lighthouse White Body */}
-      <polygon
-        points="130,160 160,160 172,348 118,348"
-        fill="#FFFFFF"
-      />
-      
+      <polygon points="130,160 160,160 172,348 118,348" fill="#FFFFFF" />
+
       {/* Golden Center Stripe / Tie on Lighthouse */}
-      <polygon
-        points="140,185 150,185 155,335 145,348 135,335"
-        fill="url(#goldGradPillar)"
-      />
+      <polygon points="140,185 150,185 155,335 145,348 135,335" fill="url(#goldGradPillar)" />
 
       {/* Right Diagonal from Lighthouse */}
-      <path
-        d="M155 270 L185 200 L200 215 L175 270 Z"
-        fill="#FFFFFF"
-      />
+      <path d="M155 270 L185 200 L200 215 L175 270 Z" fill="#FFFFFF" />
 
       {/* Right Pillar */}
-      <path
-        d="M185 188 L230 188 L230 348 L185 348 Z"
-        fill="#FFFFFF"
-      />
+      <path d="M185 188 L230 188 L230 348 L185 348 Z" fill="#FFFFFF" />
       {/* Right Serif Top/Bottom */}
       <path d="M175 188 L240 188 L240 194 L175 194 Z" fill="#FFFFFF" />
       <path d="M175 342 L240 342 L240 348 L175 348 Z" fill="#FFFFFF" />
@@ -143,12 +118,26 @@ export const ManaratakLogo: React.FC<ManaratakLogoProps> = ({
 
       {/* Linear Gradients */}
       <defs>
-        <linearGradient id="goldLightBeam" x1="170" y1="148" x2="460" y2="148" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="goldLightBeam"
+          x1="170"
+          y1="148"
+          x2="460"
+          y2="148"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop offset="0%" stopColor="#FFE082" stopOpacity="0.95" />
           <stop offset="50%" stopColor="#D9A93A" stopOpacity="0.7" />
           <stop offset="100%" stopColor="#D9A93A" stopOpacity="0" />
         </linearGradient>
-        <linearGradient id="goldGradPillar" x1="145" y1="185" x2="145" y2="348" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="goldGradPillar"
+          x1="145"
+          y1="185"
+          x2="145"
+          y2="348"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop offset="0%" stopColor="#FDD835" />
           <stop offset="50%" stopColor="#D9A93A" />
           <stop offset="100%" stopColor="#A87D1A" />
